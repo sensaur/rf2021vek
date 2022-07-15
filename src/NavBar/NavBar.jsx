@@ -1,13 +1,19 @@
 import { Link } from "react-router-dom";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function NavBar() {
   return (
-    <header className="navbar navbar-expand-lg navbar-end mb-3">
+    <header
+      className="navbar navbar-shadow navbar-expand-lg navbar-end navbar-absolute-top navbar-light"
+      data-hs-header-item-options={{
+        fixMomentClasses: "bg-dark",
+      }}
+    >
       <div className="container">
         <div className="navbar-nav-wrap">
           <div className="navbar-brand-wrapper">
             <a className="navbar-brand" href="/index.html" aria-label="Front">
-              <img className="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo" />
+              <img className="navbar-brand-logo" src="../logo.svg" alt="Logo" height="50px" />
             </a>
           </div>
           <button
