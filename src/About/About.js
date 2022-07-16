@@ -194,8 +194,6 @@ function About() {
               </div>
             </div>
 
-            <div className="w-100" />
-
             <div className="col-md-6 col-lg-5 mb-3 mb-md-7 mb-lg-0">
               <div className="d-flex pe-lg-5" data-aos="fade-up" data-aos-delay="200">
                 <div className="flex-shrink-0">
