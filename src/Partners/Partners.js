@@ -37,7 +37,7 @@ function Partners() {
 
             <div className="card-footer pt-0">
               <Link className="card-link" to="/">
-                Read story
+                Подробнее
                 <i
                   className="bi-chevron-right small ms-1"
                 />
@@ -70,7 +70,7 @@ function Partners() {
 
             <div className="card-footer pt-0">
               <Link className="card-link" to="/">
-                Read story
+                Подробнее
                 <i
                   className="bi-chevron-right small ms-1"
                 />
@@ -103,7 +103,7 @@ function Partners() {
 
             <div className="card-footer pt-0">
               <Link className="card-link" to="/">
-                Read story
+                Подробнее
                 <i
                   className="bi-chevron-right small ms-1"
                 />
