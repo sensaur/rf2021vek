@@ -13,8 +13,9 @@ function About() {
           <div className="mb-5 mb-md-10">
             <h1 className="display-4">О нас</h1>
             <p className="lead">
-              {/* eslint-disable-next-line max-len */}
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur delectus doloremque dolores eius, eligendi illum vero. Ab distinctio doloremque explicabo magnam maxime officia optio possimus, suscipit tempora.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur delectus
+              doloremque dolores eius, eligendi illum vero. Ab distinctio doloremque explicabo
+              magnam maxime officia optio possimus, suscipit tempora.
             </p>
           </div>
         </div>
@@ -98,8 +99,7 @@ function About() {
 
           <div className="col-lg-6">
             <p>
-              Рассказываем, чем занимается организация,
-              какая цель у организации, какое направление деятельности.
+              Направления деятельности
             </p>
             <p>
               Рассказываем, чем занимается организация,
