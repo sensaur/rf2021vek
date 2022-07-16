@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import img14 from '../img/480x320/img13.jpg'
 import amazonLogo from '../img/amazon.svg'
 
@@ -35,14 +35,14 @@ function Partners() {
               </p>
             </div>
 
-            <div className="card-footer pt-0">
-              <Link className="card-link" to="/">
-                Подробнее
-                <i
-                  className="bi-chevron-right small ms-1"
-                />
-              </Link>
-            </div>
+            {/* <div className="card-footer pt-0"> */}
+            {/*  <Link className="card-link" to="/"> */}
+            {/*    Подробнее */}
+            {/*    <i */}
+            {/*      className="bi-chevron-right small ms-1" */}
+            {/*    /> */}
+            {/*  </Link> */}
+            {/* </div> */}
           </div>
         </div>
 
@@ -68,14 +68,14 @@ function Partners() {
               </p>
             </div>
 
-            <div className="card-footer pt-0">
-              <Link className="card-link" to="/">
-                Подробнее
-                <i
-                  className="bi-chevron-right small ms-1"
-                />
-              </Link>
-            </div>
+            {/* <div className="card-footer pt-0"> */}
+            {/*  <Link className="card-link" to="/"> */}
+            {/*    Подробнее */}
+            {/*    <i */}
+            {/*      className="bi-chevron-right small ms-1" */}
+            {/*    /> */}
+            {/*  </Link> */}
+            {/* </div> */}
           </div>
         </div>
 
@@ -101,14 +101,14 @@ function Partners() {
               </p>
             </div>
 
-            <div className="card-footer pt-0">
-              <Link className="card-link" to="/">
-                Подробнее
-                <i
-                  className="bi-chevron-right small ms-1"
-                />
-              </Link>
-            </div>
+            {/* <div className="card-footer pt-0"> */}
+            {/*  <Link className="card-link" to="/"> */}
+            {/*    Подробнее */}
+            {/*    <i */}
+            {/*      className="bi-chevron-right small ms-1" */}
+            {/*    /> */}
+            {/*  </Link> */}
+            {/* </div> */}
           </div>
         </div>
 
