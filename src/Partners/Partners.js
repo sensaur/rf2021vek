@@ -114,10 +114,11 @@ function Partners() {
 
       </div>
 
-      <div className="text-center">
-        <Link className="btn btn-outline-primary" to="/">Все партнеры</Link>
-      </div>
+      {/* <div className="text-center"> */}
+      {/*  <Link className="btn btn-outline-primary" to="/">Все партнеры</Link> */}
+      {/* </div> */}
     </div>
+
   );
 }
 
