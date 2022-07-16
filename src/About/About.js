@@ -4,6 +4,7 @@ import img12 from '../img/480x320/img12.jpg'
 import img14 from '../img/480x320/img14.jpg'
 import img16 from '../img/480x320/img16.jpg'
 import img25 from '../img/480x320/img25.jpg'
+import Partners from '../Partners/Partners'
 
 function About() {
   return (
@@ -116,6 +117,8 @@ function About() {
       </div>
 
       <div className="border-top mx-auto" style={{ maxWidth: '25rem' }} />
+
+      <Partners />
     </main>
   );
 }
