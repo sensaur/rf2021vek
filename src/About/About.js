@@ -7,7 +7,7 @@ import img25 from '../img/480x320/img25.jpg'
 
 function About() {
   return (
-    <main id="content" role="main">
+    <main id="content" role="main" style={{ margin: '100px' }}>
       <div className="container content-space-t-3 content-space-t-lg-5">
         <div className="w-lg-75 text-center mx-lg-auto">
           <div className="mb-5 mb-md-10">
@@ -95,27 +95,23 @@ function About() {
       <div className="container content-space-2 content-space-lg-3">
         <div className="row justify-content-lg-between">
           <div className="col-lg-4 mb-5 mb-lg-0">
-            <h2>Tools should adapt to the user, not the other way around.</h2>
+            <h2>Информация об организации</h2>
           </div>
 
           <div className="col-lg-6">
             <p>
-              Since 2007, we have helped 25 companies launch over 1k incredible products.
-              We believe the best digital
-              solutions are built at the intersection of business strategy,
-              available technology, and real users
-              needs.
+              Рассказываем, чем занимается организация,
+              какая цель у организации, какое направление деятельности.
             </p>
             <p>
-              Things can get really complex, really quickly, and a pragmatic,
-              synthetic and clear vision is essential
-              to be able to create something that, after all, is meant to be used.
-              Emotions also have a big role to
-              play and developing clear and beautiful aesthetics is of the utmost
-              importance to create a pleasant
-              environment in which the user actually enjoys the time spent in it.
-              In the end, were all suckers for
-              beautiful things that just work
+              Рассказываем, чем занимается организация,
+              какая цель у организации, какое направление деятельности.
+              Рассказываем, чем занимается организация,
+              какая цель у организации, какое направление деятельности.
+              Рассказываем, чем занимается организация,
+              какая цель у организации, какое направление деятельности.
+              Рассказываем, чем занимается организация,
+              какая цель у организации, какое направление деятельности.
             </p>
           </div>
         </div>

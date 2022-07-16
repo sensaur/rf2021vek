@@ -1,15 +1,20 @@
+import { Routes, Route } from 'react-router-dom';
 import NavBar from "./NavBar/NavBar";
 import About from "./About/About";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      {/* <div style={{ margin: '90px' }}> */}
-      <div>
-        <About />
-      </div>
-    </>
+    <Routes>
+      <Route
+        path="/"
+        element={(
+          <div>
+            <NavBar />
+            <About />
+          </div>
+          )}
+      />
+    </Routes>
   );
 }
 
