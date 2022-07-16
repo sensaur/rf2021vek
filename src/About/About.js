@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img6 from '../img/480x320/img6.jpg'
 import img7 from '../img/480x320/img7.jpg'
 import img12 from '../img/480x320/img12.jpg'
@@ -77,8 +78,8 @@ function About() {
           </div>
           <div className="col-sm-4 col-lg-3 mb-7 mb-sm-0">
             <div className="text-center">
-              <h2 className="display-4">100+</h2>
-              <p className="small">волонтеров</p>
+              <h2 className="display-4">64</h2>
+              <p className="small">субъекта РФ</p>
             </div>
           </div>
           <div className="col-sm-4 col-lg-3">
@@ -255,6 +256,19 @@ function About() {
                   <h4>04</h4>
                   <p>Оператор определит вас на проект</p>
                 </div>
+              </div>
+            </div>
+            <div className="row d-flex py-6">
+              <div className="col-md-6 col-lg-6 py-3 py-lg-6">
+                <div>Остались вопросы?</div>
+                <Link className="" to="/">
+                  Свяжись с нами
+                </Link>
+              </div>
+              <div className="col-md-6 col-lg-6 text-lg-end text-center py-lg-6 py-3">
+                <Link className="btn btn-primary btn-transition" to="/">
+                  Стать волонтером
+                </Link>
               </div>
             </div>
           </div>
