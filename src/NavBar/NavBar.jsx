@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-// import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function NavBar() {
   return (
     <nav
       className="navbar navbar-shadow navbar-expand-lg navbar-end navbar-light fixed-top"
+      style={{ backgroundColor: 'white' }}
     >
       <div className="container">
         <div className="navbar-nav-wrap">
@@ -73,7 +74,7 @@ function NavBar() {
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
 export default NavBar;

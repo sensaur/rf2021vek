@@ -7,7 +7,7 @@ import img25 from '../img/480x320/img25.jpg'
 
 function About() {
   return (
-    <main id="content" role="main" style={{ margin: '100px' }}>
+    <main id="content" role="main">
       <div className="container content-space-t-3 content-space-t-lg-5">
         <div className="w-lg-75 text-center mx-lg-auto">
           <div className="mb-5 mb-md-10">
