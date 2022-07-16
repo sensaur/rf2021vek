@@ -9,7 +9,7 @@ function NavBar() {
       <div className="container">
         <div className="navbar-nav-wrap">
           <div className="navbar-brand-wrapper">
-            <a className="navbar-brand" href="/index.html" aria-label="Front">
+            <a className="navbar-brand" href="/" aria-label="Front">
               <img className="navbar-brand-logo" src="../logo.svg" alt="Logo" height="50px" />
             </a>
           </div>
