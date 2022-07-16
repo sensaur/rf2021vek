@@ -5,6 +5,7 @@ import img12 from '../img/480x320/img12.jpg'
 import img14 from '../img/480x320/img14.jpg'
 import img16 from '../img/480x320/img16.jpg'
 import img25 from '../img/480x320/img25.jpg'
+import img27 from '../img/img27.jpg'
 import Partners from '../Partners/Partners'
 
 function About() {
@@ -271,6 +272,88 @@ function About() {
                 </Link>
               </div>
             </div>
+
+            <div className="container content-space-1">
+              <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+                <span className="d-block small font-weight-bold text-cap mb-2">Руководство</span>
+                <h2>Доверяйте профессианалам</h2>
+              </div>
+
+              <div className="row mb-7">
+                <div className="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                  <img
+                    className="card-img rounded-2"
+                    src={img27}
+                    alt="888"
+                  />
+                  <div className="card card-sm text-center mt-n7 mx-3">
+                    <div className="card-body">
+                      <h4 className="card-title">Алексей Свистов</h4>
+                      <p className="card-text">CEO, Director</p>
+                      <p style={{ fontSize: '12px' }}>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+                        consequatur error ipsam porro sed veniam!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                  <img
+                    className="card-img rounded-2"
+                    src={img27}
+                    alt="888"
+                  />
+                  <div className="card card-sm text-center mt-n7 mx-3">
+                    <div className="card-body">
+                      <h4 className="card-title">Орлов</h4>
+                      <p className="card-text">Project Manager</p>
+                      <p style={{ fontSize: '12px' }}>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis error
+                        harum hic sequi soluta unde.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-md-3 mb-5 mb-sm-0">
+                  <img
+                    className="card-img rounded-2"
+                    src={img27}
+                    alt="888"
+                  />
+                  <div className="card card-sm text-center mt-n7 mx-3">
+                    <div className="card-body">
+                      <h4 className="card-title">Кулайкин</h4>
+                      <p className="card-text">Marketer</p>
+                      <p style={{ fontSize: '12px' }}>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facilis
+                        libero minima, perferendis quas voluptas?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-md-3">
+                  <img
+                    className="card-img rounded-2"
+                    src={img27}
+                    alt="888"
+                  />
+                  <div className="card card-sm text-center mt-n7 mx-3">
+                    <div className="card-body">
+                      <h4 className="card-title">Вова Зуя</h4>
+                      <p className="card-text">Lead Designer</p>
+                      <p style={{ fontSize: '12px' }}>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+                        cupiditate eum numquam sunt suscipit veniam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
