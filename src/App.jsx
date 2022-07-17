@@ -6,6 +6,7 @@ import News from "./News/News";
 import Volunteers from "./Volunteers/Volunteers";
 import Contacts from "./Contacts/Contacts";
 import Join from "./Join/Join";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
           )}
         />
       </Routes>
+      <Footer />
     </>
   )
 }
