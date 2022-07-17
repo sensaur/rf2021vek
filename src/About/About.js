@@ -264,12 +264,12 @@ function About() {
             <div className="row d-flex py-6">
               <div className="col-md-6 col-lg-6 py-3 py-lg-6">
                 <div>Остались вопросы?</div>
-                <Link className="" to="/">
+                <Link className="" to="/contacts">
                   Свяжись с нами
                 </Link>
               </div>
               <div className="col-md-6 col-lg-6 text-lg-end text-center py-lg-6 py-3">
-                <Link className="btn btn-primary btn-transition" to="/">
+                <Link className="btn btn-primary btn-transition" to="/join">
                   Стать волонтером
                 </Link>
               </div>

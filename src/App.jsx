@@ -4,6 +4,8 @@ import Projects from "./Projects/Projects";
 import NavBar from "./NavBar/NavBar";
 import News from "./News/News";
 import Volunteers from "./Volunteers/Volunteers";
+import Contacts from "./Contacts/Contacts";
+import Join from "./Join/Join";
 
 function App() {
   return (
@@ -39,6 +41,22 @@ function App() {
           element={(
             <div>
               <Volunteers />
+            </div>
+          )}
+        />
+        <Route
+          path="/contacts"
+          element={(
+            <div>
+              <Contacts />
+            </div>
+          )}
+        />
+        <Route
+          path="/join"
+          element={(
+            <div>
+              <Join />
             </div>
           )}
         />
