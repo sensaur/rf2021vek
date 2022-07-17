@@ -8,6 +8,7 @@ import img25 from '../img/480x320/img25.jpg'
 import img27 from '../img/img27.jpg'
 import Partners from '../Partners/Partners'
 import SwiperSlider from "../SwiperSlider/SwiperSlider";
+import Footer from "../Footer/Footer";
 
 function About() {
   return (
@@ -359,6 +360,7 @@ function About() {
         </div>
       </div>
       <SwiperSlider />
+      <Footer />
     </main>
   );
 }
