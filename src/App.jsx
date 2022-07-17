@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import NavBar from "./NavBar/NavBar";
+import News from "./News/News";
+import Volunteers from "./Volunteers/Volunteers";
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
             <div>
               <About />
             </div>
-      )}
+          )}
         />
         <Route
           path="/projects"
@@ -22,7 +24,23 @@ function App() {
             <div>
               <Projects />
             </div>
-      )}
+          )}
+        />
+        <Route
+          path="/news"
+          element={(
+            <div>
+              <News />
+            </div>
+          )}
+        />
+        <Route
+          path="/volunteers"
+          element={(
+            <div>
+              <Volunteers />
+            </div>
+          )}
         />
       </Routes>
     </>
