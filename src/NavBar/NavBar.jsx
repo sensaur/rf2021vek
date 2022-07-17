@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import telegram from '../img/telegram.svg'
+import whatsapp from '../img/whatsapp.svg'
+import vk from '../img/vk.svg'
 
 function NavBar() {
   return (
@@ -9,9 +12,28 @@ function NavBar() {
       <div className="container">
         <div className="navbar-nav-wrap">
           <div className="navbar-brand-wrapper">
-            <a className="navbar-brand" href="/" aria-label="Front">
-              <img className="navbar-brand-logo" src="../logo.svg" alt="Logo" height="50px" />
+            <Link
+              className="px-6"
+              to="/"
+              aria-label="Front"
+            >
+              <img className="" src="../logo5.png" alt="Logo" style={{ height: "50px", width: "50px" }} />
+            </Link>
+            <a
+              className="navbar-brand"
+              href="http://t.me/russia21st"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="Front"
+            >
+              <img className="" src={telegram} alt="Logo" height="30px" />
             </a>
+            <Link className="navbar-brand" to="/" aria-label="Front">
+              <img className="" src={whatsapp} alt="Logo" height="30px" />
+            </Link>
+            <Link className="navbar-brand" to="/" aria-label="Front">
+              <img className="" src={vk} alt="Logo" height="30px" />
+            </Link>
           </div>
           <button
             type="button"
