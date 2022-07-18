@@ -31,7 +31,7 @@ function Projects() {
               {/*  /> */}
               {/* </div> */}
               <p className="card-text">
-                <h3>Наш первый проект</h3>
+                <h3>Твори добро</h3>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, porro.
               </p>
             </div>
@@ -64,7 +64,7 @@ function Projects() {
               {/*  /> */}
               {/* </div> */}
               <p className="card-text">
-                <h3>Наш второй проект</h3>
+                <h3>Современная молодежь</h3>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, vitae!
               </p>
             </div>
@@ -97,7 +97,7 @@ function Projects() {
               {/*  /> */}
               {/* </div> */}
               <p className="card-text">
-                <h3>Наш третий проект</h3>
+                <h3>Проект по обеспечению медицинской помощи</h3>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ex.
               </p>
             </div>
