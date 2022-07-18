@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-dark">
       <div className="container pb-1 pb-lg-5">
-        <div className="row content-space-t-2">
+        <div className="row content-space-t-1">
           <div className="col-lg-6 mb-7 mb-lg-0">
             <ul className="list-unstyled">
               <li className="list-item">
@@ -79,7 +79,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="border-top border-white-10 my-7" />
+        <div className="border-top border-white-10 my-3" />
 
         <div className="w-md-85 text-lg-center mx-lg-auto">
           <p className="text-white-50 small">
