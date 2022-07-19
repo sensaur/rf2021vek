@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import telegram from '../img/telegram.svg'
 import whatsapp from '../img/whatsapp.svg'
 import vk from '../img/vk.svg'
+import logo7 from '../img/logo7.svg'
 
 function NavBar() {
   return (
@@ -17,7 +18,12 @@ function NavBar() {
               to="/"
               aria-label="Front"
             >
-              <img className="" src="../logo5.png" alt="Logo" style={{ height: "50px", width: "50px" }} />
+              <img
+                className=""
+                src={logo7}
+                alt="Logo"
+                style={{ height: "50px", width: "50px" }}
+              />
             </Link>
             <a
               className="navbar-brand"
