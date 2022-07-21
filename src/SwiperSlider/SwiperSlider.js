@@ -1,6 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+// eslint-disable-next-line import/no-unresolved
 import 'swiper/css';
+// eslint-disable-next-line import/no-unresolved
 import 'swiper/css/navigation';
+// eslint-disable-next-line import/no-unresolved
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper";
 import img10 from '../img/img10.jpg'
