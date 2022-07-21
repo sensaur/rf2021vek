@@ -7,6 +7,7 @@ import Volunteers from "./Volunteers/Volunteers";
 import Contacts from "./Contacts/Contacts";
 import Join from "./Join/Join";
 import Footer from "./Footer/Footer";
+import Project1 from "./Projects/Project1";
 
 function App() {
   return (
@@ -26,6 +27,14 @@ function App() {
           element={(
             <div>
               <Projects />
+            </div>
+          )}
+        />
+        <Route
+          path="/projects/1"
+          element={(
+            <div>
+              <Project1 />
             </div>
           )}
         />
