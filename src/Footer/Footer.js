@@ -21,7 +21,7 @@ function Footer() {
           <div className="col-lg-3 mb-7 mb-lg-0">
             <ul className="list-unstyled list-py-2">
               <li>
-                <Link className="link-sm link-light" to="/">
+                <Link className="link-sm link-light" to="/contacts">
                   <svg
                     className="bi-geo-alt-fill me-1"
                     style={{ backgroundColor: "white", borderRadius: "45px" }}
@@ -56,7 +56,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className="link-sm link-light" to="/">
+                <Link className="link-sm link-light" to="/contacts">
                   <i
                     className="bi-geo-alt-fill me-1"
                   />
