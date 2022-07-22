@@ -10,6 +10,7 @@ import Footer from "./Footer/Footer";
 import Project1 from "./Projects/Project1";
 import Project2 from "./Projects/Project2";
 import Project3 from "./Projects/Project3";
+import Article from './Article/Article'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/projects/1" element={<Project1 />} />
         <Route path="/projects/2" element={<Project2 />} />
         <Route path="/projects/3" element={<Project3 />} />
+        <Route path="/article/1" element={<Article />} />
         <Route
           path="/news"
           element={<News />}

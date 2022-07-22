@@ -280,7 +280,7 @@ function About() {
                 <h2>Доверяйте профессианалам</h2>
               </div>
 
-              <div className="row mb-7">
+              <div className="row mb-7" id="ceo">
                 <div className="col-sm-6 col-md-3 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
