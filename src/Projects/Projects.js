@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import img14 from "../img/480x320/img14.jpg";
 import img16 from "../img/480x320/img16.jpg";
 import img25 from "../img/480x320/img25.jpg";
@@ -6,6 +7,9 @@ import img25 from "../img/480x320/img25.jpg";
 // import amazonLogo from "../img/amazon.svg";
 
 function Projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div className="container content-space-2 content-space-lg-3">
       <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">

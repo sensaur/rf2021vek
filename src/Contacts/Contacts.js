@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Contacts() {
-  <script
-    type="text/javascript"
-    async
-    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aab878cdc335d92123ab91c85b5e79452e39d9e1cd3330ec781998c081156ae6b&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
-  />
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div className="container content-space-2 content-space-lg-2">
       <div className="row">
@@ -25,28 +24,27 @@ function Contacts() {
           <div className="row py-2">
             <div className="col-sm-6">
               <h5 className="mb-1">Телефон:</h5>
-              <p>+7 (495) 120-25-53</p>
+              <a href="tel:7-495-120-25-53" className="link-dark">+7 (495) 120-25-53</a>
             </div>
 
             <div className="col-sm-6">
               <h5 className="mb-1">Email:</h5>
-              <p>info@россия21век.рф</p>
+              <a className="link-dark" href="mailto:info@xn--21-flcmlqwpka9m.xn--p1ai">info@россия21век.рф</a>
             </div>
 
             <div className="col-sm-6">
-              <h5 className="mb-1">Адрес:</h5>
-              <p>
+              <h5 className="mb-1 py-1">Адрес:</h5>
+              <p className="link-dark py-2">
                 1127474, г. Москва,
                 Дмитровское шоссе, д. 60
               </p>
             </div>
             <div className="col-sm-6">
-              <h5 className="mb-1">Соц сети:</h5>
+              <h5 className="mb-1 py-1">Соц сети:</h5>
               <Link
                 className="btn btn-ghost-secondary btn-sm btn-icon rounded-circle me-2"
                 to="/"
               >
-                {/* <i className="bi-twitter" /> */}
                 <span className="btn btn-ghost-secondary btn-sm btn-icon rounded-circle me-2">
                   <svg
                     className="t-sociallinks__svg"
@@ -78,7 +76,6 @@ function Contacts() {
               >
                 <i className="bi-telegram" />
               </Link>
-
             </div>
           </div>
         </div>

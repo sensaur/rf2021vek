@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 function Join() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div className="container content-space-2 content-space-lg-2">
       <div className="mx-auto" style={{ maxWidth: "35rem" }}>

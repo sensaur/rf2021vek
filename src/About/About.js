@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import img6 from '../img/480x320/img6.jpg'
 import img7 from '../img/480x320/img7.jpg'
 import img12 from '../img/480x320/img12.jpg'
@@ -10,6 +11,9 @@ import Partners from '../Partners/Partners'
 import SwiperSlider from "../SwiperSlider/SwiperSlider";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <main id="content" role="main">
       <div className="container content-space-t-3 content-space-t-lg-5">

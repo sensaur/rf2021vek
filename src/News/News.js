@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react"
 import img3 from "../img/160x160/img3.jpg";
 import img4 from "../img/160x160/img4.jpg";
 import img2 from "../img/900x450/img2.jpg";
 
 function News() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div
       className="container"

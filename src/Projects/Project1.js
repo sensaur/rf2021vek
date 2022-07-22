@@ -1,7 +1,11 @@
 // import wave from "../img/wave-pattern-light.svg";
+import { useEffect } from "react";
 import img14 from "../img/900x450/img14.jpg";
 
 function Project1() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div
       className="container"
