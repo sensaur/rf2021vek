@@ -108,7 +108,7 @@ function NavBar() {
                 <Link className="nav-link" to="contacts">Контакты</Link>
               </li>
               <li className="nav-item">
-                <Link className="btn btn-primary btn-transition" to="join">Стать волонтером</Link>
+                <Link className="btn btn-primary btn-transition rounded-pill" to="join">Стать волонтером</Link>
               </li>
             </ul>
           </nav>
