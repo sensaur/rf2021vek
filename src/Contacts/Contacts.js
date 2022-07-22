@@ -7,7 +7,10 @@ function Contacts() {
             <h2>Контакты ОСОО «Россия XXI век»</h2>
           </div>
 
-          <div style={{ width: '1000px;', height: '400px', backgroundColor: 'green' }}>Здесь будет карта</div>
+          <div style={{ width: '1000px;', height: '400px', backgroundColor: 'green' }}>
+            Здесь будет
+            карта
+          </div>
 
           <div className="row py-2">
             <div className="col-sm-6">
