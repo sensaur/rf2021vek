@@ -1,13 +1,15 @@
 function Contacts() {
   return (
-    <div className="container content-space-t-3 content-space-t-lg-5 content-space-b-2">
+    <div className="container content-space-2 content-space-lg-2">
       <div className="row">
         <div className="col-lg-8 mb-9 mb-lg-0">
           <div className="mb-5">
-            <h1>Контакты ОСОО «Россия XXI век»</h1>
+            <h2>Контакты ОСОО «Россия XXI век»</h2>
           </div>
 
-          <div className="row">
+          <div style={{ width: '1000px;', height: '400px', backgroundColor: 'green' }}>Здесь будет карта</div>
+
+          <div className="row py-2">
             <div className="col-sm-6">
               <h5 className="mb-1">Телефон:</h5>
               <p>+7 (495) 120-25-53</p>
