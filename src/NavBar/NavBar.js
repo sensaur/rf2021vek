@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import telegram from '../img/telegram.svg'
 import whatsapp from '../img/whatsapp.svg'
 import vk from '../img/vk.svg'
@@ -102,7 +103,7 @@ function NavBar() {
                 <Link className="nav-link" to="news">Новости</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="volunteers">Волонтерам</Link>
+                <Link className="nav-link" to={{ pathname: "/", hash: "#vol" }}>Волонтерам</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="contacts">Контакты</Link>

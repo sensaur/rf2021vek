@@ -123,7 +123,7 @@ function About() {
 
       <Partners />
 
-      <div className="border-top container content-space-2 content-space-lg-3">
+      <div className="border-top container content-space-2 content-space-lg-3" id="vol">
         <div className="container">
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
             <span className="text-cap">Информация для волонтеров</span>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import img3 from "../img/160x160/img3.jpg";
 // import img4 from "../img/160x160/img4.jpg";
 import img5 from "../img/1920x800/img5.jpg";

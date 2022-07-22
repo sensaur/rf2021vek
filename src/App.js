@@ -3,7 +3,6 @@ import About from "./About/About";
 import Projects from "./Projects/Projects";
 import NavBar from "./NavBar/NavBar";
 import News from "./News/News";
-import Volunteers from "./Volunteers/Volunteers";
 import Contacts from "./Contacts/Contacts";
 import Join from "./Join/Join";
 import Footer from "./Footer/Footer";
@@ -32,10 +31,6 @@ function App() {
         <Route
           path="/news"
           element={<News />}
-        />
-        <Route
-          path="/volunteers"
-          element={<Volunteers />}
         />
         <Route
           path="/contacts"
