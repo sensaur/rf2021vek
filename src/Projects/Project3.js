@@ -1,13 +1,13 @@
 // import wave from "../img/wave-pattern-light.svg";
 
-function Project1() {
+function Project3() {
   return (
     <div
       className="container"
       style={{ marginTop: '80px' }}
     >
       <div>
-        1orem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid,
+        3orem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid,
         amet aspernatur atque consectetur cum deleniti ea eius fugit inventore ipsa labore
         laboriosam laudantium molestias obcaecati officiis quam quas quasi quisquam quo recusandae
         rem rerum sequi temporibus ullam voluptates. Accusamus deserunt dolorum ea hic itaque
@@ -140,4 +140,4 @@ function Project1() {
   );
 }
 
-export default Project1;
+export default Project3;

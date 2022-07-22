@@ -8,6 +8,8 @@ import Contacts from "./Contacts/Contacts";
 import Join from "./Join/Join";
 import Footer from "./Footer/Footer";
 import Project1 from "./Projects/Project1";
+import Project2 from "./Projects/Project2";
+import Project3 from "./Projects/Project3";
 
 function App() {
   return (
@@ -16,59 +18,30 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={(
-            <div>
-              <About />
-            </div>
-          )}
+          element={<About />}
         />
         <Route
           path="/projects"
-          element={(
-            <div>
-              <Projects />
-            </div>
-            )}
+          element={<Projects />}
         />
-        <Route
-          path="/projects/1"
-          element={(
-            <div>
-              <Project1 />
-            </div>
-            )}
-        />
+        <Route path="/projects/1" element={<Project1 />} />
+        <Route path="/projects/2" element={<Project2 />} />
+        <Route path="/projects/3" element={<Project3 />} />
         <Route
           path="/news"
-          element={(
-            <div>
-              <News />
-            </div>
-            )}
+          element={<News />}
         />
         <Route
           path="/volunteers"
-          element={(
-            <div>
-              <Volunteers />
-            </div>
-            )}
+          element={<Volunteers />}
         />
         <Route
           path="/contacts"
-          element={(
-            <div>
-              <Contacts />
-            </div>
-            )}
+          element={<Contacts />}
         />
         <Route
           path="/join"
-          element={(
-            <div>
-              <Join />
-            </div>
-            )}
+          element={<Join />}
         />
       </Routes>
       <Footer />

@@ -24,13 +24,6 @@ function Projects() {
             />
 
             <div className="card-body">
-              {/* <div className="mb-3"> */}
-              {/*  <img */}
-              {/*    className="avatar avatar-lg avatar-4x3" */}
-              {/*    src={amazonLogo} */}
-              {/*    alt="Logo" */}
-              {/*  /> */}
-              {/* </div> */}
               <p className="card-text">
                 <h3>Твори добро</h3>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, porro.
@@ -38,7 +31,7 @@ function Projects() {
             </div>
 
             <div className="card-footer pt-0">
-              <Link className="card-link" to="/">
+              <Link className="card-link" to="/projects/1">
                 Подробнее
                 <i
                   className="bi-chevron-right small ms-1"
@@ -57,13 +50,6 @@ function Projects() {
             />
 
             <div className="card-body">
-              {/* <div className="mb-3"> */}
-              {/*  <img */}
-              {/*    className="avatar avatar-lg avatar-4x3" */}
-              {/*    src={amazonLogo} */}
-              {/*    alt="Logo" */}
-              {/*  /> */}
-              {/* </div> */}
               <p className="card-text">
                 <h3>Современная молодежь</h3>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, vitae!
@@ -71,7 +57,7 @@ function Projects() {
             </div>
 
             <div className="card-footer pt-0">
-              <Link className="card-link" to="/">
+              <Link className="card-link" to="/projects/2">
                 Подробнее
                 <i
                   className="bi-chevron-right small ms-1"
@@ -90,13 +76,6 @@ function Projects() {
             />
 
             <div className="card-body">
-              {/* <div className="mb-3"> */}
-              {/*  <img */}
-              {/*    className="avatar avatar-lg avatar-4x3" */}
-              {/*    src={amazonLogo} */}
-              {/*    alt="Logo" */}
-              {/*  /> */}
-              {/* </div> */}
               <p className="card-text">
                 <h3>Проект по обеспечению медицинской помощи</h3>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ex.
@@ -104,7 +83,7 @@ function Projects() {
             </div>
 
             <div className="card-footer pt-0">
-              <Link className="card-link" to="/">
+              <Link className="card-link" to="/projects/3">
                 Подробнее
                 <i
                   className="bi-chevron-right small ms-1"
