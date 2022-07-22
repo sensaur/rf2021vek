@@ -11,6 +11,7 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/russia-circle-flag-png-2.png" />
     <link href="/css/theme.min.css" rel="stylesheet">
+    <link href="/css/leaflet.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <title>РФ 21 век</title>
   </head>
@@ -21,5 +22,15 @@
     <script src="%PUBLIC_URL%/js/hs-header.min.js"></script>
     <script src="%PUBLIC_URL%/js/bootstrap.bundle.min.js"></script>
     <script src="%PUBLIC_URL%/js/theme.min.js"></script>
+    <script>
+      (function() {
+        new HSHeader('#header').init()
+        const leaflet = HSCore.components.HSLeaflet.init(document.getElementById('map'))
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+          id: 'mapbox/light-v9'
+        }).addTo(leaflet)
+      })()
+    </script>
   </body>
 </html>
