@@ -31,7 +31,7 @@ function Article() {
 
               <div className="flex-grow-1 ms-3">
                 <h5 className="mb-0">
-                  <Link className="text-dark" to="/#ceo">Алексей Свистов</Link>
+                  <a className="text-dark" href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D1%81%D0%B2%D0%B8%D1%81%D1%82%D0%BE%D0%B2-9bb94222b/">Алексей Свистов</a>
                 </h5>
                 <span className="d-block small">1 day ago</span>
               </div>
