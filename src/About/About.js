@@ -127,6 +127,158 @@ function About() {
 
       <Partners />
 
+      <div className="gradient-y-sm-primary position-relative zi-2 overflow-hidden">
+        <div
+          className="container position-relative content-space-t-3 content-space-t-lg-4 content-space-b-2"
+        >
+          <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+            <h1 className="display-4 mb-3">Путь развития</h1>
+            <p className="lead">За время работы в различных субъектах РФ мы достигли больших результатов</p>
+          </div>
+
+          <div className="js-swiper-software-hero swiper zi-2">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide my-2">
+                <div className="card card-sm card-transition shadow-sm">
+                  {/* <img className="card-img-top" src="./assets/img/400x200/img1.jpg" */}
+                  {/*     alt="Image Description"> */}
+
+                  <div className="card-body">
+                    <h4 className="card-title">Atlassian</h4>
+                    <p className="card-text small">Developer tools</p>
+
+                    <div className="d-grid">
+                      <a className="btn btn-primary btn-sm" href="/">Install</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="swiper-slide my-2">
+                <div className="card card-sm card-transition shadow-sm">
+                  {/* <img className="card-img-top" src="./assets/img/400x200/img2.jpg" */}
+                  {/*     alt="Image Description"> */}
+
+                  <div className="card-body">
+                    <h4 className="card-title">Asana</h4>
+                    <p className="card-text small">Productivity</p>
+
+                    <div className="d-grid">
+                      <a className="btn btn-primary btn-sm" href="/">Install</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="swiper-slide my-2">
+                <div className="card card-sm card-transition shadow-sm">
+                  {/* <img className="card-img-top" src="./assets/img/400x200/img3.jpg" */}
+                  {/*     alt="Image Description"> */}
+
+                  <div className="card-body">
+                    <h4 className="card-title">Slack</h4>
+                    <p className="card-text small">Collaboration tool</p>
+
+                    <div className="d-grid">
+                      <a className="btn btn-primary btn-sm" href="/">Install</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="swiper-slide my-2">
+                <div className="card card-sm card-transition shadow-sm">
+                  {/* <img className="card-img-top" src="./assets/img/400x200/img4.jpg" */}
+                  {/*     alt="Image Description"> */}
+
+                  <div className="card-body">
+                    <h4 className="card-title">Spotify</h4>
+                    <p className="card-text small">Streaming service</p>
+
+                    <div className="d-grid">
+                      <a className="btn btn-primary btn-sm" href="/">Install</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="swiper-slide my-2">
+                <div className="card card-sm card-transition shadow-sm">
+                  {/* <img className="card-img-top" src="./assets/img/400x200/img5.jpg" */}
+                  {/*     alt="Image Description"> */}
+
+                  <div className="card-body">
+                    <h4 className="card-title">DigitalOcean</h4>
+                    <p className="card-text small">Cloud infrastructure</p>
+
+                    <div className="d-grid">
+                      <a className="btn btn-primary btn-sm" href="/">Install</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="js-swiper-software-hero-pagination swiper-pagination d-lg-none" />
+
+            <div className="js-swiper-software-hero-preloader swiper-preloader">
+              <div className="spinner-border text-primary" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+
+          <figure
+            className="position-absolute zi-n1"
+            style={{
+              top: "-35rem", left: "50rem", width: "62rem", height: "62rem",
+            }}
+          >
+            <svg
+              preserveAspectRatio="none"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              viewBox="0 0 260 260"
+            >
+              <circle fill="#e7eaf3" opacity=".7" cx="130" cy="130" r="130" />
+            </svg>
+          </figure>
+
+          <figure
+            className="position-absolute zi-n1"
+            style={{
+              top: '15rem', left: '70rem', width: '20rem', height: '20rem',
+            }}
+          >
+            {/* <img className="img-fluid" src="./assets/svg/components/circled-stripe.svg" */}
+            {/*     alt="Image Description"> */}
+          </figure>
+
+          <figure
+            className="position-absolute zi-n1"
+            style={{
+              bottom: '11rem', left: "-3rem", width: "15rem", height: "15rem",
+            }}
+          >
+            {/* <img className="img-fluid" src="./assets/svg/components/dots.svg" */}
+            {/*     alt="Image Description"> */}
+          </figure>
+        </div>
+
+        <div className="shape shape-bottom zi-1">
+          <svg
+            width="3000"
+            height="500"
+            viewBox="0 0 3000 500"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 500H3000V0L0 500Z" fill="#fff" />
+          </svg>
+        </div>
+      </div>
+
       <div className="border-top container content-space-2 content-space-lg-3" id="vol">
         <div className="container">
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
