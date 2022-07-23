@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import swal from 'sweetalert';
 import { send } from 'emailjs-com';
+import { useNavigate } from "react-router-dom";
 
 function Join() {
+  const navigate = useNavigate()
   const initialState = {
     firstName: '',
     lastName: '',
@@ -30,6 +32,7 @@ function Join() {
     swal("Ваша заявка принята, спасибо! "
       + `\n`
       + "В ближайшее время оператор свяжется с Вами")
+    navigate("/")
   }
   return (
     <div className="container content-space-2 content-space-lg-2">
