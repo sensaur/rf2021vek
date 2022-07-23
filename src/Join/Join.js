@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import swal from 'sweetalert';
+import { send } from 'emailjs-com';
 
 function Join() {
   const initialState = {
@@ -18,6 +19,14 @@ function Join() {
   }, [])
   const onSubmit = (e) => {
     e.preventDefault()
+    send(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      {
+        ...toSend,
+      },
+      process.env.REACT_APP_USER_ID,
+    )
     swal("Ваша заявка принята, спасибо! "
       + `\n`
       + "В ближайшее время оператор свяжется с Вами")
