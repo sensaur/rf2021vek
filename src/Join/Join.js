@@ -1,7 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import swal from 'sweetalert';
 
 function Join() {
+  const initialState = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    comments: '',
+  }
+  const [toSend, setToSend] = useState(initialState);
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
@@ -24,12 +35,14 @@ function Join() {
                 <div className="col-sm-6">
                   <div className="mb-3">
                     {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-                    <label className="form-label" htmlFor="hireUsFormFirstName">Имя</label>
+                    <label className="form-label" htmlFor="firstName">Имя</label>
                     <input
+                      onChange={handleChange}
+                      value={toSend.firstName}
                       type="text"
                       className="form-control form-control-lg"
-                      name="hireUsFormNameFirstName"
-                      id="hireUsFormFirstName"
+                      name="firstName"
+                      id="firstName"
                       placeholder="Имя"
                       aria-label="Имя"
                     />
@@ -39,12 +52,14 @@ function Join() {
                 <div className="col-sm-6">
                   <div className="mb-3">
                     {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-                    <label className="form-label" htmlFor="hireUsFormLasttName">Фамилия</label>
+                    <label className="form-label" htmlFor="lastName">Фамилия</label>
                     <input
+                      onChange={handleChange}
+                      value={toSend.lastName}
                       type="text"
                       className="form-control form-control-lg"
-                      name="hireUsFormNameLastName"
-                      id="hireUsFormLasttName"
+                      name="lastName"
+                      id="lastName"
                       placeholder="Фамилия"
                       aria-label="Фамилия"
                     />
@@ -63,10 +78,12 @@ function Join() {
                         (Не обязательно)
                       </span>
                       <input
+                        onChange={handleChange}
+                        value={toSend.email}
                         type="email"
                         className="form-control form-control-lg"
-                        name="hireUsFormNameWorkEmail"
-                        id="hireUsFormWorkEmail"
+                        name="email"
+                        id="email"
                         placeholder="email@site.com"
                         aria-label="email@site.com"
                       />
@@ -76,14 +93,16 @@ function Join() {
                   <div className="col-sm-6">
                     <div className="mb-3">
                       {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-                      <label className="form-label" htmlFor="hireUsFormPhone">
+                      <label className="form-label" htmlFor="phone">
                         Телефон
                       </label>
                       <input
+                        onChange={handleChange}
+                        value={toSend.phone}
                         type="text"
                         className="form-control form-control-lg"
-                        name="hireUsFormNamePhone"
-                        id="hireUsFormPhone"
+                        name="phone"
+                        id="phone"
                         placeholder="+7(xxx)xxx-xx-xx"
                         aria-label="+7(xxx)xxx-xx-xx"
                       />
@@ -92,16 +111,18 @@ function Join() {
                 </div>
                 <div className="mb-3">
                   {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-                  <label className="form-label" htmlFor="hireUsFormDetails">Комментарий к заявке &nbsp;</label>
+                  <label className="form-label" htmlFor="comments">Комментарий к заявке &nbsp;</label>
                   <span
                     className="form-label-secondary"
                   >
                     (Не обязательно)
                   </span>
                   <textarea
+                    onChange={handleChange}
+                    value={toSend.comments}
                     className="form-control form-control-lg"
-                    name="hireUsFormNameDetails"
-                    id="hireUsFormDetails"
+                    name="comments"
+                    id="comments"
                     placeholder="Укажите дополнительную информацию по желанию ..."
                     aria-label="Укажите дополнительную информацию по желанию ..."
                     rows="4"
