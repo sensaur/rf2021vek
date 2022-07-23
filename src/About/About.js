@@ -137,6 +137,7 @@ function About() {
           </div>
 
           <div className="js-swiper-software-hero swiper zi-2">
+
             <div className="swiper-wrapper">
               <div className="swiper-slide my-2">
                 <div className="card card-sm card-transition shadow-sm">
