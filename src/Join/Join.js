@@ -1,9 +1,16 @@
 import { useEffect } from "react";
+import swal from 'sweetalert';
 
 function Join() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
+  const onSubmit = (e) => {
+    e.preventDefault()
+    swal("Ваша заявка принята, спасибо! "
+      + `\n`
+      + "В ближайшее время оператор свяжется с Вами")
+  }
   return (
     <div className="container content-space-2 content-space-lg-2">
       <div className="mx-auto" style={{ maxWidth: "35rem" }}>
@@ -12,7 +19,7 @@ function Join() {
             <div className="text-center mb-5 mb-md-9">
               <h2>Расскажите о себе</h2>
             </div>
-            <form>
+            <form onSubmit={onSubmit}>
               <div className="row gx-3">
                 <div className="col-sm-6">
                   <div className="mb-3">
