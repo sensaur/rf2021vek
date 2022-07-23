@@ -21,18 +21,22 @@ function Join() {
   }, [])
   const onSubmit = (e) => {
     e.preventDefault()
-    send(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      {
-        ...toSend,
-      },
-      process.env.REACT_APP_USER_ID,
-    )
-    swal("Ваша заявка принята, спасибо! "
-      + `\n`
-      + "В ближайшее время оператор свяжется с Вами")
-    navigate("/")
+    // eslint-disable-next-line no-unused-expressions,no-nested-ternary
+    !toSend.firstName ? swal("Пожалуйста укажите имя")
+      : !toSend.lastName ? swal("Пожалуйста укажите фамилию")
+        : send(
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
+          {
+            ...toSend,
+          },
+          process.env.REACT_APP_USER_ID,
+        ).then(() => {
+          swal("Ваша заявка принята, спасибо! "
+        + `\n`
+        + "В ближайшее время оператор свяжется с Вами")
+          navigate("/")
+        })
   }
   return (
     <div className="container content-space-2 content-space-lg-2">
@@ -123,7 +127,10 @@ function Join() {
                 </div>
                 <div className="mb-3">
                   {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-                  <label className="form-label" htmlFor="comments">Комментарий к заявке &nbsp;</label>
+                  <label className="form-label" htmlFor="comments">
+                    Комментарий к
+                    заявке &nbsp;
+                  </label>
                   <span
                     className="form-label-secondary"
                   >
@@ -146,7 +153,10 @@ function Join() {
                 </div>
 
                 <div className="text-center">
-                  <p className="form-text">Оформляя форму вы соглашаетесь с политикой обработки персональных данных</p>
+                  <p className="form-text">
+                    Оформляя форму вы соглашаетесь с политикой обработки
+                    персональных данных
+                  </p>
                 </div>
               </div>
             </form>
