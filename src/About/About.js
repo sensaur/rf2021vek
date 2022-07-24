@@ -167,7 +167,10 @@ function About() {
                 <div className="card card-sm card-transition shadow-sm">
                   <div className="card-body text-center">
                     <h4 className="card-title">2018</h4>
-                    <p className="card-text small">Всероссийский конкурс &quot;Российская династия&quot;</p>
+                    <p className="card-text small">
+                      Всероссийский конкурс &quot;Российская
+                      династия&quot;
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -212,7 +215,10 @@ function About() {
                 <div className="card card-sm card-transition shadow-sm">
                   <div className="card-body text-center">
                     <h4 className="card-title">2022</h4>
-                    <p className="card-text small">Что-то еще Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, possimus!</p>
+                    <p className="card-text small">
+                      Что-то еще Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Atque, possimus!
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -238,7 +244,10 @@ function About() {
                 <div className="card card-sm card-transition shadow-sm">
                   <div className="card-body text-center">
                     <h4 className="card-title">2018</h4>
-                    <p className="card-text small">Всероссийский конкурс &quot;Российская династия&quot;</p>
+                    <p className="card-text small">
+                      Всероссийский конкурс &quot;Российская
+                      династия&quot;
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -283,7 +292,10 @@ function About() {
                 <div className="card card-sm card-transition shadow-sm">
                   <div className="card-body text-center">
                     <h4 className="card-title">2022</h4>
-                    <p className="card-text small">Что-то еще Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, possimus!</p>
+                    <p className="card-text small">
+                      Что-то еще Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Atque, possimus!
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -346,6 +358,10 @@ function About() {
         <div className="container">
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
             <span className="text-cap">Информация для волонтеров</span>
+            <p>
+              Пишем зачем нам нужны волонтеры и как нам можно присоседиться дальше описываем путь
+              для волонтеров.
+            </p>
           </div>
         </div>
 
