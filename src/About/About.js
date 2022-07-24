@@ -219,6 +219,77 @@ function About() {
             </Swiper>
 
           </div>
+          <div className="js-swiper-software-hero swiper zi-2">
+
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              freeMode
+              pagination={{
+                clickable: true,
+              }}
+              loop
+              // direction="vertical"
+              modules={[FreeMode]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                {' '}
+                <div className="card card-sm card-transition shadow-sm">
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2018</h4>
+                    <p className="card-text small">Всероссийский конкурс &quot;Российская династия&quot;</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
+                <div className="card card-sm card-transition shadow-sm">
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2019</h4>
+                    <p className="card-text small">
+                      Социальная поддержка детей-инвалидов &quot;Твори
+                      добро&quot;
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
+                <div className="card card-sm card-transition shadow-sm">
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2020</h4>
+                    <p className="card-text small">
+                      Онлайн Турнир по шахматам среди инвалидов
+                      совместно с РОО&quot;ХБШО&quot; России
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
+                <div className="card card-sm card-transition shadow-sm">
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2021</h4>
+                    <p className="card-text small">
+                      Решение соц. проблем инвалидов, помощь мед
+                      учреждениям &quot;Я волонтер&quot;
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
+                <div className="card card-sm card-transition shadow-sm">
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2022</h4>
+                    <p className="card-text small">Что-то еще Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, possimus!</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+
+          </div>
 
           <figure
             className="position-absolute zi-n1"
