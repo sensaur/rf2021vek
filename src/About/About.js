@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+// import { useEffect } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+// eslint-disable-next-line no-unused-vars
+import { Pagination, FreeMode } from "swiper";
 import img6 from '../img/480x320/img6.jpg'
 import img7 from '../img/480x320/img7.jpg'
 import img12 from '../img/480x320/img12.jpg'
@@ -9,11 +12,17 @@ import img25 from '../img/480x320/img25.jpg'
 import img27 from '../img/img27.jpg'
 import Partners from '../Partners/Partners'
 import SwiperSlider from "../SwiperSlider/SwiperSlider";
+// eslint-disable-next-line import/no-unresolved
+import 'swiper/css';
+// eslint-disable-next-line import/no-unresolved
+import 'swiper/css/navigation';
+// eslint-disable-next-line import/no-unresolved
+import "swiper/css/pagination";
 
 function About() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [])
   return (
     <main id="content" role="main">
       <div className="container content-space-t-3 content-space-t-lg-5">
@@ -133,100 +142,82 @@ function About() {
         >
           <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
             <h1 className="display-4 mb-3">Путь развития</h1>
-            <p className="lead">За время работы в различных субъектах РФ мы достигли больших результатов</p>
+            <p className="lead">
+              За время работы в различных субъектах РФ мы достигли больших
+              результатов
+            </p>
           </div>
 
           <div className="js-swiper-software-hero swiper zi-2">
 
-            <div className="swiper-wrapper">
-              <div className="swiper-slide my-2">
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              freeMode
+              pagination={{
+                clickable: true,
+              }}
+              loop
+              // direction="vertical"
+              modules={[FreeMode]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                {' '}
                 <div className="card card-sm card-transition shadow-sm">
-                  {/* <img className="card-img-top" src="./assets/img/400x200/img1.jpg" */}
-                  {/*     alt="Image Description"> */}
-
-                  <div className="card-body">
-                    <h4 className="card-title">Atlassian</h4>
-                    <p className="card-text small">Developer tools</p>
-
-                    <div className="d-grid">
-                      <a className="btn btn-primary btn-sm" href="/">Install</a>
-                    </div>
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2018</h4>
+                    <p className="card-text small">Всероссийский конкурс &quot;Российская династия&quot;</p>
                   </div>
                 </div>
-              </div>
-
-              <div className="swiper-slide my-2">
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
                 <div className="card card-sm card-transition shadow-sm">
-                  {/* <img className="card-img-top" src="./assets/img/400x200/img2.jpg" */}
-                  {/*     alt="Image Description"> */}
-
-                  <div className="card-body">
-                    <h4 className="card-title">Asana</h4>
-                    <p className="card-text small">Productivity</p>
-
-                    <div className="d-grid">
-                      <a className="btn btn-primary btn-sm" href="/">Install</a>
-                    </div>
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2019</h4>
+                    <p className="card-text small">
+                      Социальная поддержка детей-инвалидов &quot;Твори
+                      добро&quot;
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <div className="swiper-slide my-2">
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
                 <div className="card card-sm card-transition shadow-sm">
-                  {/* <img className="card-img-top" src="./assets/img/400x200/img3.jpg" */}
-                  {/*     alt="Image Description"> */}
-
-                  <div className="card-body">
-                    <h4 className="card-title">Slack</h4>
-                    <p className="card-text small">Collaboration tool</p>
-
-                    <div className="d-grid">
-                      <a className="btn btn-primary btn-sm" href="/">Install</a>
-                    </div>
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2020</h4>
+                    <p className="card-text small">
+                      Онлайн Турнир по шахматам среди инвалидов
+                      совместно с РОО&quot;ХБШО&quot; России
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <div className="swiper-slide my-2">
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
                 <div className="card card-sm card-transition shadow-sm">
-                  {/* <img className="card-img-top" src="./assets/img/400x200/img4.jpg" */}
-                  {/*     alt="Image Description"> */}
-
-                  <div className="card-body">
-                    <h4 className="card-title">Spotify</h4>
-                    <p className="card-text small">Streaming service</p>
-
-                    <div className="d-grid">
-                      <a className="btn btn-primary btn-sm" href="/">Install</a>
-                    </div>
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2021</h4>
+                    <p className="card-text small">
+                      Решение соц. проблем инвалидов, помощь мед
+                      учреждениям &quot;Я волонтер&quot;
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <div className="swiper-slide my-2">
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
                 <div className="card card-sm card-transition shadow-sm">
-                  {/* <img className="card-img-top" src="./assets/img/400x200/img5.jpg" */}
-                  {/*     alt="Image Description"> */}
-
-                  <div className="card-body">
-                    <h4 className="card-title">DigitalOcean</h4>
-                    <p className="card-text small">Cloud infrastructure</p>
-
-                    <div className="d-grid">
-                      <a className="btn btn-primary btn-sm" href="/">Install</a>
-                    </div>
+                  <div className="card-body text-center">
+                    <h4 className="card-title">2022</h4>
+                    <p className="card-text small">Что-то еще Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, possimus!</p>
                   </div>
                 </div>
-              </div>
-            </div>
+              </SwiperSlide>
+            </Swiper>
 
-            <div className="js-swiper-software-hero-pagination swiper-pagination d-lg-none" />
-
-            <div className="js-swiper-software-hero-preloader swiper-preloader">
-              <div className="spinner-border text-primary" role="status">
-                <span className="visually-hidden">Loading...</span>
-              </div>
-            </div>
           </div>
 
           <figure

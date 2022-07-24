@@ -1,10 +1,16 @@
 import { HashLink as Link } from 'react-router-hash-link';
 import img3 from "../img/160x160/img3.jpg";
+import { numWord } from "../helpers/numWord";
 // import img4 from "../img/160x160/img4.jpg";
 import img5 from "../img/1920x800/img5.jpg";
 import img6 from "../img/img777.webp";
 
 function Article() {
+  const ONEDAY = 24 * 60 * 60 * 1000;
+  const today = new Date()
+  let dateOfArticle = new Date()
+  dateOfArticle = new Date((dateOfArticle.setDate(today.getDate() - 10)))
+  const days = Math.round(Math.abs(((today - dateOfArticle) / ONEDAY)))
   return (
     <div className="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
       <div className="w-lg-65 mx-lg-auto">
@@ -33,7 +39,7 @@ function Article() {
                 <h5 className="mb-0">
                   <a className="text-dark" href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D1%81%D0%B2%D0%B8%D1%81%D1%82%D0%BE%D0%B2-9bb94222b/">Алексей Свистов</a>
                 </h5>
-                <span className="d-block small">1 day ago</span>
+                <span className="d-block small">{`${days} ${numWord(days, ['день', 'дня', 'дней'])} назад`}</span>
               </div>
             </div>
           </div>
