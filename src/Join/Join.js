@@ -23,20 +23,22 @@ function Join() {
     e.preventDefault()
     // eslint-disable-next-line no-unused-expressions,no-nested-ternary
     !toSend.firstName ? swal("Пожалуйста укажите имя")
+      // eslint-disable-next-line no-nested-ternary
       : !toSend.lastName ? swal("Пожалуйста укажите фамилию")
-        : send(
-          process.env.REACT_APP_SERVICE_ID,
-          process.env.REACT_APP_TEMPLATE_ID,
-          {
-            ...toSend,
-          },
-          process.env.REACT_APP_USER_ID,
-        ).then(() => {
-          swal("Ваша заявка принята, спасибо! "
+        : !toSend.phone ? swal("Пожалуйста укажите телефон")
+          : send(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            {
+              ...toSend,
+            },
+            process.env.REACT_APP_USER_ID,
+          ).then(() => {
+            swal("Ваша заявка принята, спасибо! "
         + `\n`
         + "В ближайшее время оператор свяжется с Вами")
-          navigate("/")
-        })
+            navigate("/")
+          }).catch(swal("Что-то пошло не так, попробуйте позднее"))
   }
   return (
     <div className="container content-space-2 content-space-lg-2">

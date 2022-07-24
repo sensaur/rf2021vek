@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 function Contacts() {
@@ -41,9 +40,9 @@ function Contacts() {
             </div>
             <div className="col-sm-6">
               <h5 className="mb-1 py-1">Соц сети:</h5>
-              <Link
+              <a
                 className="btn btn-ghost-secondary btn-sm btn-icon rounded-circle me-2"
-                to="/"
+                href="http://t.me/russia21st"
               >
                 <span className="btn btn-ghost-secondary btn-sm btn-icon rounded-circle me-2">
                   <svg
@@ -69,13 +68,13 @@ function Contacts() {
                   </svg>
 
                 </span>
-              </Link>
-              <Link
+              </a>
+              <a
                 className="btn btn-ghost-secondary btn-sm btn-icon rounded-circle me-2"
-                to="/"
+                href="http://t.me/russia21st"
               >
                 <i className="bi-telegram" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
