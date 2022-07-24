@@ -148,7 +148,7 @@ function About() {
             </p>
           </div>
 
-          <div className="js-swiper-software-hero swiper zi-2">
+          <div className="js-swiper-software-hero swiper zi-2 d-none d-sm-block">
 
             <Swiper
               slidesPerView={3}
@@ -219,7 +219,7 @@ function About() {
             </Swiper>
 
           </div>
-          <div className="js-swiper-software-hero swiper zi-2">
+          <div className="js-swiper-software-hero swiper zi-2 d-block d-sm-none">
 
             <Swiper
               slidesPerView={1}
