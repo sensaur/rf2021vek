@@ -1,11 +1,16 @@
 import { HashLink as Link } from 'react-router-hash-link';
-import img3 from "../img/160x160/img3.jpg";
+// import img3 from "../img/160x160/img3.jpg";
+import { useEffect } from "react";
+import img33 from "../img/img33.jpeg";
 import { numWord } from "../helpers/numWord";
 // import img4 from "../img/160x160/img4.jpg";
 import img5 from "../img/1920x800/img5.jpg";
 import img6 from "../img/img777.webp";
 
 function Article() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   const ONEDAY = 24 * 60 * 60 * 1000;
   const today = new Date()
   let dateOfArticle = new Date()
@@ -30,7 +35,7 @@ function Article() {
               <div className="flex-shrink-0">
                 <img
                   className="avatar avatar-circle"
-                  src={img3}
+                  src={img33}
                   alt="ava"
                 />
               </div>

@@ -38,7 +38,7 @@ function Join() {
         + `\n`
         + "В ближайшее время оператор свяжется с Вами")
             navigate("/")
-          }).catch(swal("Что-то пошло не так, попробуйте позднее"))
+          }).catch(() => { swal("Что-то пошло не так, попробуйте позднее") })
   }
   return (
     <div className="container content-space-2 content-space-lg-2">
