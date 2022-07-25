@@ -11,7 +11,7 @@ import Project2 from "./Projects/Project2";
 import Project3 from "./Projects/Project3";
 import Article from './Article/Article'
 //
-/// ///
+/// /////
 function App() {
   return (
     <>
