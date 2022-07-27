@@ -19,7 +19,7 @@ function Project2() {
         >
           <div className="px-3" />
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            <span className="text-cap text-white-70">Второй проект</span>
+            <span className="text-cap text-white-70">Современная молодежь</span>
             <h2 className="text-white">
               Помогаем Lorem ipsum dolor sit amet, consectetur.
             </h2>
