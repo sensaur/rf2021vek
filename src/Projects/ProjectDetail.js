@@ -1,12 +1,18 @@
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { useUsersContext } from '../context'
+import { useUsersContext } from "../context";
 
-function Project3() {
+function ProjectDetail() {
+  const { id } = useParams()
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
 
+  // console.log(id)
   const { state } = useUsersContext()
+  const project = state?.filter((el) => el.id === id)
+  // console.log(project[0])
 
   return (
     <div
@@ -22,47 +28,47 @@ function Project3() {
           <div className="px-3" />
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
             <span className="text-cap text-white-70">
-              {state[2]?.title}
+              {project[0].title}
             </span>
             <h2 className="text-white">
-              {state[2]?.description}
+              {project[0].description}
             </h2>
           </div>
           <div className="card h-100">
             <img
               className="card-img-top"
-              src={state[2]?.image}
+              src={project[0].image}
               alt="dobro"
             />
           </div>
         </div>
       </div>
       <h3 className="py-3 mx-1">
-        {state[2]?.header1}
+        {project[0].header1}
       </h3>
       <p className="py-1 mx-1">
-        {state[2]?.text1}
+        {project[0].text1}
       </p>
       <h3 className="mx-1">
-        {state[2]?.header2}
+        {project[0].header2}
       </h3>
       <p className="py-1 mx-1">
-        {state[2]?.text2}
+        {project[0].text2}
       </p>
       <p className="py-1 mx-1">
-        {state[2]?.text3}
+        {project[0].text3}
       </p>
       <p className="py-1 mx-1">
-        {state[2]?.text4}
+        {project[0].text4}
       </p>
       <p className="py-1 mx-1">
-        {state[2]?.text5}
+        {project[0].text5}
       </p>
       <p className="py-1 mx-1">
-        {state[2]?.text6}
+        {project[0].text6}
       </p>
     </div>
   );
 }
 
-export default Project3;
+export default ProjectDetail;

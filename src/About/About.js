@@ -361,11 +361,11 @@ function About() {
       <div className="border-top container content-space-2 content-space-lg-3" id="vol">
         <div className="container">
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            <span className="text-cap">Информация для волонтеров</span>
             <p>
-              Пишем зачем нам нужны волонтеры и как нам можно присоседиться дальше описываем путь
-              для волонтеров.
+              Мы привлекаем волонтеров к участию в мероприятиях по социальной реабилитации детей –
+              инвалидов.
             </p>
+            <span className="text-cap">Как это работает </span>
           </div>
         </div>
 
@@ -495,7 +495,7 @@ function About() {
                 </div>
                 <div className="flex-grow-1 ms-4">
                   <h4>04</h4>
-                  <p>Оператор определит вас на проект</p>
+                  <p>Мы определим вас на проект</p>
                 </div>
               </div>
             </div>
@@ -528,12 +528,8 @@ function About() {
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
-                      <h4 className="card-title">Алексей Свистов</h4>
-                      <p className="card-text">CEO, Director</p>
-                      <p style={{ fontSize: '12px' }}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-                        consequatur error ipsam porro sed veniam!
-                      </p>
+                      <h4 className="card-title">Свисов Алексей Александрович</h4>
+                      <p className="card-text">Директор</p>
                     </div>
                   </div>
                 </div>
@@ -546,12 +542,8 @@ function About() {
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
-                      <h4 className="card-title">Орлов</h4>
-                      <p className="card-text">Project Manager</p>
-                      <p style={{ fontSize: '12px' }}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis error
-                        harum hic sequi soluta unde.
-                      </p>
+                      <h4 className="card-title">Кулайкин Сергей Владимирович</h4>
+                      <p className="card-text">Заместитель председателя по общим вопросам</p>
                     </div>
                   </div>
                 </div>
@@ -564,12 +556,8 @@ function About() {
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
-                      <h4 className="card-title">Кулайкин</h4>
-                      <p className="card-text">Marketer</p>
-                      <p style={{ fontSize: '12px' }}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facilis
-                        libero minima, perferendis quas voluptas?
-                      </p>
+                      <h4 className="card-title">Орлов Сергей Валерьевич</h4>
+                      <p className="card-text">Заместитель председателя по медицинскому и социальному сотрудничествуr</p>
                     </div>
                   </div>
                 </div>
@@ -584,10 +572,10 @@ function About() {
                     <div className="card-body">
                       <h4 className="card-title">Орнелла</h4>
                       <p className="card-text">Lead Designer</p>
-                      <p style={{ fontSize: '12px' }}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-                        cupiditate eum numquam sunt suscipit veniam.
-                      </p>
+                      {/* <p style={{ fontSize: '12px' }}> */}
+                      {/*  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis */}
+                      {/*  cupiditate eum numquam sunt suscipit veniam. */}
+                      {/* </p> */}
                     </div>
                   </div>
                 </div>
