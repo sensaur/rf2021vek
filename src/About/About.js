@@ -578,7 +578,7 @@ function About() {
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
-                      <h4 className="card-title">Вова Зуя</h4>
+                      <h4 className="card-title">Орнелла Мутти</h4>
                       <p className="card-text">Lead Designer</p>
                       <p style={{ fontSize: '12px' }}>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis

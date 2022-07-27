@@ -38,7 +38,7 @@ function Project1() {
         </div>
       </div>
       <h3 className="py-3 mx-1">
-        {state[1]?.header1}
+        {state[0]?.header1}
       </h3>
       <p className="py-1 mx-1">
         {state[1]?.text1}
