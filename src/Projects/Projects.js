@@ -33,7 +33,7 @@ function Projects() {
             <div className="card-body">
               <p className="card-text">
                 <h3>Твори добро</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, porro.
+                Улучшение физического и эмоционального самочувствие детей с особенностями развития
               </p>
             </div>
 
@@ -59,7 +59,7 @@ function Projects() {
             <div className="card-body">
               <p className="card-text">
                 <h3>Современная молодежь</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, vitae!
+                Привлечение внимания молодежи к проблемам детей с особенностями
               </p>
             </div>
 
@@ -85,7 +85,7 @@ function Projects() {
             <div className="card-body">
               <p className="card-text">
                 <h3>Проект по обеспечению медицинской помощи</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ex.
+                Обеспечение нуждающихся ветеранов, детей с инвалидностью медицинскими препаратами
               </p>
             </div>
 
