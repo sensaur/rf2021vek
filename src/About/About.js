@@ -197,7 +197,7 @@ function About() {
                   <div className="card-body text-center">
                     <h4 className="card-title">2020</h4>
                     <p className="card-text small">
-                      Онлайн Турнир по шахматам среди инвалидов
+                      Турнир по шахматам среди инвалидов
                       совместно с РОО&quot;ХБШО&quot; России
                     </p>
                   </div>
@@ -221,8 +221,7 @@ function About() {
                   <div className="card-body text-center">
                     <h4 className="card-title">2022</h4>
                     <p className="card-text small">
-                      Что-то еще Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit. Atque, possimus!
+                      Проведение регулярных мероприятий и помощь в социализации детей-инвалидов
                     </p>
                   </div>
                 </div>
