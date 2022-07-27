@@ -1,4 +1,3 @@
-// import wave from "../img/wave-pattern-light.svg";
 import { useEffect } from "react";
 import img14 from "../img/900x450/img14.jpg";
 
