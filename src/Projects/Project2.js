@@ -22,44 +22,44 @@ function Project2() {
           <div className="px-3" />
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
             <span className="text-cap text-white-70">
-              {state[0]?.title}
+              {state[1]?.title}
             </span>
             <h2 className="text-white">
-              {state[0]?.description}
+              {state[1]?.description}
             </h2>
           </div>
           <div className="card h-100">
             <img
               className="card-img-top"
-              src={state[0]?.image}
+              src={state[1]?.image}
               alt="dobro"
             />
           </div>
         </div>
       </div>
       <h3 className="py-3 mx-1">
-        {state[0]?.header1}
+        {state[1]?.header1}
       </h3>
       <p className="py-1 mx-1">
-        {state[0]?.text1}
+        {state[1]?.text1}
       </p>
       <h3 className="mx-1">
-        {state[0]?.header2}
+        {state[1]?.header2}
       </h3>
       <p className="py-1 mx-1">
-        {state[0]?.text2}
+        {state[1]?.text2}
       </p>
       <p className="py-1 mx-1">
-        {state[0]?.text3}
+        {state[1]?.text3}
       </p>
       <p className="py-1 mx-1">
-        {state[0]?.text4}
+        {state[1]?.text4}
       </p>
       <p className="py-1 mx-1">
-        {state[0]?.text5}
+        {state[1]?.text5}
       </p>
       <p className="py-1 mx-1">
-        {state[0]?.text6}
+        {state[1]?.text6}
       </p>
     </div>
   );

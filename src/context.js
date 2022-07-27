@@ -24,7 +24,7 @@ function UsersContextProvider({ children }) {
     try {
       const response = await Client.getEntries({
         content_type: "projects",
-        order: "sys.createdAt",
+        order: "-sys.createdAt",
       })
       console.log("response.items==>", response.items)
       const projects = formatData(response.items)
