@@ -6,11 +6,11 @@ import UsersContextProvider from './context'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-  <UsersContextProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </UsersContextProvider>,
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <UsersContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </UsersContextProvider>
+  </React.StrictMode>,
 );
