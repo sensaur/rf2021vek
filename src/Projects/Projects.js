@@ -29,7 +29,7 @@ function Projects() {
 
             <div className="card-body">
               <p className="card-text">
-                <h3>Твори добро</h3>
+                <h3>Современная молодежь</h3>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, porro.
               </p>
             </div>
@@ -55,7 +55,7 @@ function Projects() {
 
             <div className="card-body">
               <p className="card-text">
-                <h3>Современная молодежь</h3>
+                <h3>Твори добро</h3>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, vitae!
               </p>
             </div>

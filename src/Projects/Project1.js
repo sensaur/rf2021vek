@@ -49,6 +49,18 @@ function Project1() {
       <p className="py-1 mx-1">
         {state[1]?.text2}
       </p>
+      <p className="py-1 mx-1">
+        {state[1]?.text3}
+      </p>
+      <p className="py-1 mx-1">
+        {state[1]?.text4}
+      </p>
+      <p className="py-1 mx-1">
+        {state[1]?.text5}
+      </p>
+      <p className="py-1 mx-1">
+        {state[1]?.text6}
+      </p>
     </div>
   );
 }
