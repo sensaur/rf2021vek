@@ -8,6 +8,7 @@ import Join from "./Join/Join";
 import Footer from "./Footer/Footer";
 import Article from './Article/Article'
 import ProjectDetail from "./Projects/ProjectDetail";
+import Policy from "./Policy/Policy";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/projects/:id" element={<ProjectDetail />} />
 
         <Route path="/article/1" element={<Article />} />
+        <Route path="/policy" element={<Policy />} />
         <Route
           path="/news"
           element={<News />}

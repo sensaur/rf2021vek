@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Footer() {
   return (
@@ -8,10 +8,10 @@ function Footer() {
           <div className="col-lg-6 mb-7 mb-lg-0">
             <ul className="list-unstyled">
               <li className="list-item">
-                <Link className="link-sm link-light" to="/">Политика конфиденциальности</Link>
+                <Link className="link-sm link-light" to="/policy">Политика конфиденциальности</Link>
               </li>
               <li className="list-item">
-                <Link className="link-sm link-light" to="/">
+                <Link className="link-sm link-light" to={{ pathname: "/policy/", hash: "#agreement" }}>
                   Согласие на обработку персональных
                   данных
                 </Link>
