@@ -6,6 +6,7 @@ import { numWord } from "../helpers/numWord";
 // import img5 from "../img/1920x800/img5.jpg";
 import img6 from "../img/img777.webp";
 import rf21vek from "../img/rf21vek.webp"
+import vstrecha from '../img/vstrecha.webp'
 
 function Article() {
   useEffect(() => {
@@ -173,8 +174,14 @@ function Article() {
           Такие центры достойны поддержки и уважения, ведь им не безразлична судьба детей с
           инвалидностью.
         </p>
-        <p>Вствить картинку</p>
-        <p>Встреча с директором «Центра Радуга» Дмитриевой Валентиной Георгиевной.</p>
+        <div className="my-4 my-sm-8">
+          <img
+            className="img-fluid rounded-lg"
+            src={vstrecha}
+            alt="gty"
+          />
+        </div>
+        <p className="text-center">Встреча с директором «Центра Радуга» Дмитриевой Валентиной Георгиевной.</p>
 
         <figure className="bg-light text-center p-7 my-7">
           <blockquote className="blockquote blockquote-lg">
