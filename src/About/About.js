@@ -229,6 +229,7 @@ function About() {
             </Swiper>
 
           </div>
+
           <div className="js-swiper-software-hero swiper zi-2 d-block d-sm-none">
 
             <Swiper
@@ -273,7 +274,7 @@ function About() {
                   <div className="card-body text-center">
                     <h4 className="card-title">2020</h4>
                     <p className="card-text small">
-                      Онлайн Турнир по шахматам среди инвалидов
+                      Турнир по шахматам среди инвалидов
                       совместно с РОО&quot;ХБШО&quot; России
                     </p>
                   </div>
@@ -297,8 +298,7 @@ function About() {
                   <div className="card-body text-center">
                     <h4 className="card-title">2022</h4>
                     <p className="card-text small">
-                      Что-то еще Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit. Atque, possimus!
+                      Проведение регулярных мероприятий и помощь в социализации детей-инвалидов
                     </p>
                   </div>
                 </div>
@@ -557,7 +557,10 @@ function About() {
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
                       <h4 className="card-title">Орлов Сергей Валерьевич</h4>
-                      <p className="card-text">Заместитель председателя по медицинскому и социальному сотрудничествуr</p>
+                      <p className="card-text">
+                        Заместитель председателя по медицинскому и
+                        социальному сотрудничествуr
+                      </p>
                     </div>
                   </div>
                 </div>
