@@ -22,7 +22,7 @@ function SwiperSlider() {
         }}
         navigation
         modules={[Navigation, Pagination]}
-        style={{ height: '500px' }}
+        // style={{ height: '700px' }}
       >
         <SwiperSlide>
           <div className="swiper-slide py-6">
