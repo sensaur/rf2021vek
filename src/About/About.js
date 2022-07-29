@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 // import { useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 // eslint-disable-next-line no-unused-vars
-import { Pagination, FreeMode } from "swiper";
+import {
+  Pagination, FreeMode, Autoplay, Navigation,
+} from "swiper";
 import img6 from '../img/480x320/img6.jpg'
 import img7 from '../img/480x320/img7.jpg'
 import img12 from '../img/480x320/img12.jpg'
@@ -152,19 +154,26 @@ function About() {
               результатов
             </p>
           </div>
-
-          <div className="js-swiper-software-hero swiper zi-2 d-none d-sm-block">
+          {/* desktop */}
+          <div className="js-swiper-software-hero swiper zi-2 d-none d-sm-block" style={{ height: '3000px;' }}>
 
             <Swiper
               slidesPerView={3}
+              // freeMode
+              loop
+              // modules={[FreeMode]}
+              // className="mySwiper"
               spaceBetween={30}
-              freeMode
+              // centeredSlides
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               pagination={{
                 clickable: true,
               }}
-              loop
-              // direction="vertical"
-              modules={[FreeMode]}
+              navigation
+              modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
               <SwiperSlide>
@@ -229,20 +238,39 @@ function About() {
             </Swiper>
 
           </div>
-
+          {/* mobile */}
           <div className="js-swiper-software-hero swiper zi-2 d-block d-sm-none">
 
             <Swiper
               slidesPerView={1}
-              spaceBetween={30}
               freeMode
+              // loop
+              // modules={[FreeMode]}
+              // className="mySwiper"
+              spaceBetween={30}
+              // centeredSlides
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               pagination={{
                 clickable: true,
               }}
-              loop
-              // direction="vertical"
-              modules={[FreeMode]}
+              navigation
+              modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
+
+              // slidesPerView={1}
+              // spaceBetween={30}
+              // freeMode
+              // pagination={{
+              //   clickable: true,
+              // }}
+              // loop
+              // autoplay
+              // // direction="vertical"
+              // modules={[FreeMode]}
+              // className="mySwiper"
             >
               <SwiperSlide>
                 {' '}
