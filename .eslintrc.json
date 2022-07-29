@@ -1,49 +1,53 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+    "env": {
+        "browser": true,
+        "es2021": true
     },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "plugins": [
-    "react"
-  ],
-  "rules": {
-    "react/jsx-filename-extension": [
-      "warn",
-      {
-        "extensions": [
-          ".jsx",
-          ".tsx",
-          ".js",
-          ".ts"
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [
+            "warn",
+            {
+                "extensions": [
+                    ".jsx",
+                    ".tsx",
+                    ".js",
+                    ".ts"
+                ]
+            }
+        ],
+        "react/react-in-jsx-scope": 0,
+        "quotes": 0,
+        "semi": 0,
+        "no-console": 0,
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "import/no-relative-packages": 0,
+        "no-debugger": 0,
+        "import/no-unresolved": [
+            2,
+            { "caseSensitive": false }
         ]
-      }
-    ],
-    "react/react-in-jsx-scope": 0,
-    "quotes": 0,
-    "semi": 0,
-    "no-console": 0,
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ],
-    "import/no-relative-packages": 0,
-    "no-debugger": 0
-  }
+    }
 }
