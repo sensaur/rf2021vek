@@ -159,20 +159,15 @@ function About() {
 
             <Swiper
               slidesPerView={3}
-              // freeMode
               loop
-              // modules={[FreeMode]}
-              // className="mySwiper"
               spaceBetween={30}
-              // centeredSlides
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
               }}
               pagination={{
-                clickable: true,
+                clickable: false,
               }}
-              navigation
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
@@ -244,33 +239,16 @@ function About() {
             <Swiper
               slidesPerView={1}
               freeMode
-              // loop
-              // modules={[FreeMode]}
-              // className="mySwiper"
               spaceBetween={30}
-              // centeredSlides
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
               }}
               pagination={{
-                clickable: true,
+                clickable: false,
               }}
-              navigation
               modules={[Autoplay, Pagination, Navigation, FreeMode]}
               className="mySwiper"
-
-              // slidesPerView={1}
-              // spaceBetween={30}
-              // freeMode
-              // pagination={{
-              //   clickable: true,
-              // }}
-              // loop
-              // autoplay
-              // // direction="vertical"
-              // modules={[FreeMode]}
-              // className="mySwiper"
             >
               <SwiperSlide>
                 {' '}
