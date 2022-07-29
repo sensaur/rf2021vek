@@ -257,7 +257,7 @@ function About() {
                 clickable: true,
               }}
               navigation
-              modules={[Autoplay, Pagination, Navigation]}
+              modules={[Autoplay, Pagination, Navigation, FreeMode]}
               className="mySwiper"
 
               // slidesPerView={1}
