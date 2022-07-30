@@ -17,7 +17,7 @@ function Projects() {
   const [state, setState] = useState([])
   //
   const formatData = (items) => {
-    console.log("items==>", items)
+    // console.log("items==>", items)
     const tempItems = items.map((item) => {
       const { id } = item.sys;
       const image = item.fields.image.fields.file.url
@@ -33,11 +33,11 @@ function Projects() {
         content_type: "projects",
         order: "sys.createdAt",
       })
-      console.log("response.items==>", response.items)
+      // console.log("response.items==>", response.items)
       const projects = formatData(response.items)
-      console.log("projects=>", projects)
+      // console.log("projects=>", projects)
       setState(projects)
-      console.log("state!!!=>>", state)
+      // console.log("state!!!=>>", state)
     } catch (error) {
       console.log(error)
     }
@@ -48,13 +48,13 @@ function Projects() {
   // }), [state])
 
   useEffect(() => {
-    console.log("111");
+    // console.log("111");
     (async function resolve() { await getData(); }());
   }, []);
 
-  useEffect(() => {
-    console.log("i am state from ue", state);
-  }, [state]);
+  // useEffect(() => {
+  //   console.log("i am state from ue", state);
+  // }, [state]);
 
   // console.log(setState)
   // console.log(state)
