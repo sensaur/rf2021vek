@@ -76,7 +76,7 @@ function Footer() {
                   <i
                     className="bi-envelope me-1"
                   />
-                  info@россия21век.рф
+                  info@rf21vek.ru
                 </a>
               </li>
               <li>
