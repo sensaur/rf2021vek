@@ -20,23 +20,23 @@ function App() {
           element={<About />}
         />
         <Route
-          path="/projects"
+          path="projects"
           element={<Projects />}
         />
-        <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="projects/:id" element={<ProjectDetail />} />
 
-        <Route path="/article/1" element={<Article />} />
-        <Route path="/policy" element={<Policy />} />
+        <Route path="article/1" element={<Article />} />
+        <Route path="policy" element={<Policy />} />
         <Route
-          path="/news"
+          path="news"
           element={<News />}
         />
         <Route
-          path="/contacts"
+          path="contacts"
           element={<Contacts />}
         />
         <Route
-          path="/join"
+          path="join"
           element={<Join />}
         />
       </Routes>
