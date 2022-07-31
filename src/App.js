@@ -3,6 +3,7 @@ import About from "./About/About";
 import Projects from "./Projects/Projects";
 import NavBar from "./NavBar/NavBar";
 import News from "./News/News";
+import NewsDetail from "./News/NewsDetail";
 import Contacts from "./Contacts/Contacts";
 import Join from "./Join/Join";
 import Footer from "./Footer/Footer";
@@ -33,6 +34,7 @@ function App() {
             path="news"
             element={<News />}
           />
+          <Route path="news/:id" element={<NewsDetail />} />
           <Route
             path="contacts"
             element={<Contacts />}

@@ -96,7 +96,7 @@ function News() {
             <div className="col-lg-4">
               <div className="card-body">
                 <h3 className="card-title">
-                  <Link className="text-dark small" to={`/projects/${el?.id}`}>
+                  <Link className="text-dark small" to={`/news/${el?.id}`}>
                     {el.headingShort}
                   </Link>
                 </h3>
