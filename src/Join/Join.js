@@ -35,7 +35,8 @@ function Join() {
               ...toSend,
             },
             process.env.REACT_APP_USER_ID,
-          ).then(setLoader(true))
+          ).then(window.scrollTo(0, 0))
+            .then(setLoader(true))
             .then(() => {
               swal("Ваша заявка принята, спасибо! "
         + `\n`
