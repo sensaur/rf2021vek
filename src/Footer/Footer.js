@@ -72,7 +72,7 @@ function Footer() {
             {/* <p className="link-sm link-light">КОНТАКТЫ</p> */}
             <ul className="list-unstyled list-py-1">
               <li>
-                <a className="link-sm link-light" href="mailto:info@xn--21-flcmlqwpka9m.xn--p1ai">
+                <a className="link-sm link-light" href="mailto:info@rf21vek.ru">
                   <i
                     className="bi-envelope me-1"
                   />
