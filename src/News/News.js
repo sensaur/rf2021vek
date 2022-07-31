@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import alex from "../img/img33.jpeg";
 // import rf21vek from "../img/900x450/rf21vek.png";
 import Client from "../Contentful";
+import Loader from "../Loader/Loader";
 
 function News() {
   useEffect(() => {
@@ -10,6 +11,7 @@ function News() {
   }, [])
 
   const [state, setState] = useState([])
+  const [loader, setLoader] = useState(false)
   const formatData = (items) => {
     console.log("items==>", items)
     const tempItems = items.map((item) => {
@@ -29,7 +31,7 @@ function News() {
       console.log("response.items==>", response.items)
       const articles = formatData(response.items)
       console.log("articles=>", articles)
-      setState(articles)
+      setState(articles)(setLoader(false))
       console.log("state!!!=>>", state)
     } catch (error) {
       console.log(error)
@@ -37,12 +39,19 @@ function News() {
   }
 
   useEffect(() => {
+    setLoader(true);
     (async function resolve() {
       await getData();
     }());
   }, []);
 
   console.log("state123", state)
+  console.log("loader", loader)
+
+  if (loader) {
+    console.log(loader)
+    return <Loader />
+  }
 
   return (
     <div
