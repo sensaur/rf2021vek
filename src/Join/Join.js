@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import swal from 'sweetalert';
 import { send } from 'emailjs-com';
 import { useNavigate } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 function Join() {
   const navigate = useNavigate()
@@ -13,6 +14,7 @@ function Join() {
     comments: '',
   }
   const [toSend, setToSend] = useState(initialState);
+  const [loader, setLoader] = useState(false)
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
@@ -33,12 +35,16 @@ function Join() {
               ...toSend,
             },
             process.env.REACT_APP_USER_ID,
-          ).then(() => {
-            swal("Ваша заявка принята, спасибо! "
+          ).then(setLoader(true))
+            .then(() => {
+              swal("Ваша заявка принята, спасибо! "
         + `\n`
         + "В ближайшее время оператор свяжется с Вами")
-            navigate("/")
-          }, () => { swal("Что-то пошло не так, попробуйте позднее") })
+              navigate("/")
+            }, () => { swal("Что-то пошло не так, попробуйте позднее") })
+  }
+  if (loader) {
+    return <Loader />
   }
   return (
     <div className="container content-space-2 content-space-lg-2">
