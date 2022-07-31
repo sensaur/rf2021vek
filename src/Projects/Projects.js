@@ -63,6 +63,7 @@ function Projects() {
   // eslint-disable-next-line no-unused-expressions
   // state.image ? console.log("y") : console.log("n")
   if (state.image) {
+    console.log(state.image)
     return (
       <div className="container content-space-2 content-space-lg-3">
         <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
@@ -73,6 +74,7 @@ function Projects() {
       </div>
     )
   }
+  console.log(state.image)
   return (
     <div className="container content-space-2 content-space-lg-3">
       <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
