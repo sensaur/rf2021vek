@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Client from "../Contentful";
+import Loader from "../Loader/Loader";
 
 // import amazonLogo from "../img/amazon.svg";
 
@@ -15,6 +16,7 @@ function Projects() {
   // }, [state])
   //
   const [state, setState] = useState([])
+  const [loader, setLoader] = useState(false)
   //
   const formatData = (items) => {
     // console.log("items==>", items)
@@ -36,7 +38,8 @@ function Projects() {
       // console.log("response.items==>", response.items)
       const projects = formatData(response.items)
       // console.log("projects=>", projects)
-      setState(projects)
+      setState(projects);
+      (setLoader(false))
       // console.log("state!!!=>>", state)
     } catch (error) {
       console.log(error)
@@ -48,7 +51,7 @@ function Projects() {
   // }), [state])
 
   useEffect(() => {
-    // console.log("111");
+    setLoader(true);
     (async function resolve() { await getData(); }());
   }, []);
 
@@ -74,7 +77,12 @@ function Projects() {
       </div>
     )
   }
-  console.log(state.image)
+
+  if (loader) {
+    console.log(loader)
+    return <Loader />
+  }
+
   return (
     <div className="container content-space-2 content-space-lg-3">
       <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">

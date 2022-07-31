@@ -31,7 +31,8 @@ function News() {
       console.log("response.items==>", response.items)
       const articles = formatData(response.items)
       console.log("articles=>", articles)
-      setState(articles)(setLoader(false))
+      setState(articles);
+      (setLoader(false))
       console.log("state!!!=>>", state)
     } catch (error) {
       console.log(error)
