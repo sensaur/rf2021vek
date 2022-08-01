@@ -44,7 +44,9 @@ function ProjectDetail() {
           </div>
         </div>
       </div>
-      {documentToReactComponents(project[0].textMain1)}
+      <div className="mx-1">
+        {documentToReactComponents(project[0].textMain1)}
+      </div>
     </div>
   );
 }
