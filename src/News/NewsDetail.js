@@ -23,7 +23,11 @@ function NewsDetail() {
       // eslint-disable-next-line no-shadow
       const { id } = item.sys;
       const avatarUrl = item.fields.authorAvatar.fields.file.url
-      const news = { ...item.fields, id, avatarUrl }
+      // const image1Url = item.fields.image1.fields.file.url
+      const image1Url = item.fields.image1?.fields.file.url
+      const news = {
+        ...item.fields, id, avatarUrl, image1Url,
+      }
       return news
     })
     return tempItems
@@ -60,6 +64,7 @@ function NewsDetail() {
   // console.log(id)
   console.log("state!!!=>>", state)
   // console.log("oneNews!!!=>>", oneNews)
+  // console.log(oneNews.image1?.fields.file.url)
   if (loader) {
     return <Loader />
   }
@@ -68,7 +73,6 @@ function NewsDetail() {
   const today = new Date()
   const dateOfArticle = new Date(2022, 6, 4)
   const days = Math.round(Math.abs(((today - dateOfArticle) / ONEDAY)))
-  // console.log(oneNews.authorAvatar.fields.file.url)
 
   return (
     <div className="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
@@ -119,6 +123,16 @@ function NewsDetail() {
         </div>
         {documentToReactComponents(oneNews.text1)}
       </div>
+      {oneNews.image1Url ? (
+        <div className="my-4 my-sm-8">
+          <img
+            className="img-fluid rounded-lg"
+            src={oneNews.image1Url}
+            alt="pic"
+          />
+        </div>
+      )
+        : ""}
     </div>
   );
 }
