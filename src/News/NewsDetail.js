@@ -99,8 +99,7 @@ function NewsDetail() {
                     className="text-dark"
                     href={oneNews.linkFromAvatar}
                   >
-                    Алексей
-                    Свистов
+                    {oneNews.author}
                   </a>
                 </h5>
                 <span

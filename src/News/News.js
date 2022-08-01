@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react"
 import moment from 'moment';
-import alex from "../img/img33.jpeg";
 // import rf21vek from "../img/900x450/rf21vek.png";
 import Client from "../Contentful";
 import Loader from "../Loader/Loader";
@@ -19,7 +18,8 @@ function News() {
     const tempItems = items.map((item) => {
       const { id } = item.sys;
       // const image = item.imageShort?.fields.file.url
-      const news = { ...item.fields, id }
+      const avatarUrl = item.fields.authorAvatar.fields.file.url
+      const news = { ...item.fields, id, avatarUrl }
       return news
     })
     return tempItems
@@ -118,7 +118,7 @@ function News() {
                       >
                         <img
                           className="avatar-img"
-                          src={alex}
+                          src={el.avatarUrl}
                           alt="alex"
                         />
                       </div>
