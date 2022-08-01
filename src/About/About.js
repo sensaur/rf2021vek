@@ -27,14 +27,14 @@ function About() {
   // }, [])
   return (
     <main id="content" role="main">
-      <div className="container content-space-t-3 content-space-t-lg-5">
+      <div className="container content-space-t-3 content-space-t-lg-3">
         <div className="w-lg-75 text-center mx-lg-auto">
           <div className="mb-5 mb-md-10">
-            <h1 className="display-4">&quot;Россия XXI век&quot;</h1>
-            <p className="lead">
-              некоммерческая организация, занимающаяся
-              благотворительной помощью, привлечением волонтеров и просто неравнодушных людей. Наша
-              основная помощь направлена детям с инвалидностью и их родителям.
+            <h1 className="display-4">Россия XXI век</h1>
+            <p className="lead content-space-t-lg-2">
+              Благотворительная некоммерческая организация. Мы занимается благотворительной помощью,
+              привлечением волонтеров и просто неравнодушных людей на помощь детям с инвалидностью и
+              их родителям.
             </p>
           </div>
         </div>
@@ -85,28 +85,6 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="container content-space-2 content-space-lg-3">
-        <div className="row justify-content-lg-center">
-          <div className="col-sm-4 col-lg-3 mb-7 mb-sm-0">
-            <div className="text-center">
-              <h2 className="display-4">3</h2>
-              <p className="small">проекта</p>
-            </div>
-          </div>
-          <div className="col-sm-4 col-lg-3 mb-7 mb-sm-0">
-            <div className="text-center">
-              <h2 className="display-4">64</h2>
-              <p className="small">субъекта РФ</p>
-            </div>
-          </div>
-          <div className="col-sm-4 col-lg-3">
-            <div className="text-center">
-              <h2 className="display-4">85%</h2>
-              <p className="small">чегонибудьеще</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className="border-top mx-auto" style={{ maxWidth: '25rem' }} />
 
@@ -127,13 +105,28 @@ function About() {
               Благодаря нашим связям и опыту работы, мы привлекаем различных бизнесменов — наших
               единомышленников, неравнодушных людей, которые хотят помочь.
             </p>
-            <p>Деятельность организации направлена на:</p>
-            <ul>
-              <li>Оказание медицинской помощи;</li>
-              <li>Распределение нуждающихся в медучреждения, по необходимости и запросу;</li>
-              <li>Помощью в реабилитации детей инвалидов;</li>
-              <li>Социализацию детей, организацию различного досуга и мероприятий;</li>
-              <li>Привлечение волонтеров для разносторонней помощи;</li>
+            <p>Наша деятельность:</p>
+            <ul className="list-unstyled list-py-2">
+              <li>
+                <span className="legend-indicator bg-primary" />
+                Оказание медицинской помощи;
+              </li>
+              <li>
+                <span className="legend-indicator bg-primary" />
+                Распределение нуждающихся в медучреждения, по необходимости и запросу;
+              </li>
+              <li>
+                <span className="legend-indicator bg-primary" />
+                Помощью в реабилитации детей инвалидов;
+              </li>
+              <li>
+                <span className="legend-indicator bg-primary" />
+                Социализацию детей, организацию различного досуга и мероприятий;
+              </li>
+              <li>
+                <span className="legend-indicator bg-primary" />
+                Привлечение волонтеров для разносторонней помощи;
+              </li>
             </ul>
           </div>
         </div>
@@ -148,14 +141,18 @@ function About() {
           className="container position-relative content-space-t-3 content-space-t-lg-4 content-space-b-2"
         >
           <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            <h1 className="display-4 mb-3">Путь развития</h1>
+            {/* <h1 className="display-4 mb-3">Путь развития</h1> */}
+            <h1 className="">Путь развития</h1>
             <p className="lead">
               За время работы в различных субъектах РФ мы достигли больших
               результатов
             </p>
           </div>
           {/* desktop */}
-          <div className="js-swiper-software-hero swiper zi-2 d-none d-sm-block" style={{ height: '3000px;' }}>
+          <div
+            className="js-swiper-software-hero swiper zi-2 d-none d-sm-block"
+            style={{ height: '3000px;' }}
+          >
 
             <Swiper
               slidesPerView={3}
@@ -366,14 +363,16 @@ function About() {
 
       <div className="border-top container content-space-2 content-space-lg-3" id="vol">
         <div className="container">
+          <h1 className="text-center">Информация для волонтеров</h1>
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
             <p>
               Мы привлекаем волонтеров к участию в мероприятиях по социальной реабилитации детей –
               инвалидов.
             </p>
-            <span className="text-cap">Как это работает </span>
+            {/* <span className="text-cap">Как это работает </span> */}
           </div>
         </div>
+        <h2 className="px-lg-6">Как это работает?</h2>
 
         <div className="container content-space-1">
           <div className="row justify-content-lg-center">
@@ -505,24 +504,24 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="row d-flex py-6">
-              <div className="col-md-6 col-lg-6 py-3 py-lg-6">
-                <div>Остались вопросы?</div>
-                <Link className="" to="/contacts">
-                  Свяжись с нами
-                </Link>
-              </div>
-              <div className="col-md-6 col-lg-6 text-lg-end text-center py-lg-6 py-3">
-                <Link className="btn btn-primary btn-transition" to="/join">
-                  Стать волонтером
-                </Link>
-              </div>
+
+            <div className="d-grid gap-2 col-5 mx-auto py-6">
+              <Link className="btn btn-primary btn-transition" to="/join">
+                Стать волонтером
+              </Link>
+            </div>
+
+            <div className="py-1 text-end">
+              <div>Остались вопросы?</div>
+              <Link className="" to="/contacts">
+                Свяжись с нами
+              </Link>
             </div>
 
             <div className="container content-space-1">
               <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-                <span className="d-block small font-weight-bold text-cap mb-2">Руководство</span>
-                <h2>Доверяйте профессианалам</h2>
+                <h1>Руководство</h1>
+                {/* <h2>Доверяйте профессианалам</h2> */}
               </div>
 
               <div className="row mb-7" id="ceo">

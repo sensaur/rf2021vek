@@ -53,7 +53,7 @@ function Join() {
         <div className="card">
           <div className="card-body">
             <div className="text-center mb-5 mb-md-9">
-              <h2>Расскажите о себе</h2>
+              <h2>Заполните форму</h2>
             </div>
             <form onSubmit={onSubmit}>
               <div className="row gx-3">

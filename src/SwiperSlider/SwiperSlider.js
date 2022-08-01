@@ -12,10 +12,9 @@ import img10 from '../img/img10.jpg'
 function SwiperSlider() {
   return (
     <div className="container">
-      <h4 className="text-center">
-        Россия XXI век занимается благотворительной помощью, привлечением волонтеров и
-        неравнодушных людей
-      </h4>
+      <h1 className="text-center">
+        Отзывы
+      </h1>
       <Swiper
         pagination={{
           type: "progressbar",
@@ -49,11 +48,6 @@ function SwiperSlider() {
                 помощи инвалидам детства
               </span>
               <span className="blockquote-footer-source">“Досуговый центр Радуга”</span>
-              {/* <img */}
-              {/*  className="avatar avatar-xl avatar-4x3" */}
-              {/*  src={mailchimp} */}
-              {/*  alt="Logo" */}
-              {/* /> */}
             </figure>
           </div>
         </SwiperSlide>
@@ -78,11 +72,6 @@ function SwiperSlider() {
                 Нахабина Наталья
                 <span className="blockquote-footer-source"> Волонтёр</span>
               </figcaption>
-              {/* <img */}
-              {/*  className="avatar avatar-xl avatar-4x3" */}
-              {/*  src={mailchimp} */}
-              {/*  alt="Logo" */}
-              {/* /> */}
             </figure>
           </div>
         </SwiperSlide>
@@ -129,11 +118,6 @@ function SwiperSlider() {
                 Макаров Николай
                 <span className="blockquote-footer-source"> Волонтёр </span>
               </figcaption>
-              {/* <img */}
-              {/*  className="avatar avatar-xl avatar-4x3" */}
-              {/*  src={mailchimp} */}
-              {/*  alt="Logo" */}
-              {/* /> */}
             </figure>
           </div>
         </SwiperSlide>

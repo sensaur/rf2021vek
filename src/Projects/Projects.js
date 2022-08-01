@@ -70,9 +70,9 @@ function Projects() {
     return (
       <div className="container content-space-2 content-space-lg-3">
         <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-          <h2>
+          <h1 className="py-3">
             Наши проекты
-          </h2>
+          </h1>
         </div>
       </div>
     )
@@ -86,9 +86,9 @@ function Projects() {
   return (
     <div className="container content-space-2 content-space-lg-3">
       <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-        <h2>
+        <h1 className="py-3">
           Наши проекты
-        </h2>
+        </h1>
       </div>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
         {state?.map((el) => (
