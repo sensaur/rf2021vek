@@ -170,10 +170,13 @@ function About() {
             >
               <SwiperSlide>
                 {' '}
-                <div className="card card-sm card-transition shadow-sm">
+                <div
+                  className="card card-sm card-transition shadow-sm"
+                  style={{ backgroundColor: "rgba(55,126,254)" }}
+                >
                   <div className="card-body text-center">
-                    <h4 className="card-title">2018</h4>
-                    <p className="card-text small">
+                    <h4 className="card-title" style={{ color: "white" }}>2018</h4>
+                    <p className="card-text small" style={{ color: "white" }}>
                       Всероссийский конкурс &quot;Российская
                       династия&quot;
                     </p>
@@ -181,11 +184,13 @@ function About() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                {' '}
-                <div className="card card-sm card-transition shadow-sm">
+                <div
+                  className="card card-sm card-transition shadow-sm"
+                  style={{ backgroundColor: "rgba(5,200,168)" }}
+                >
                   <div className="card-body text-center">
-                    <h4 className="card-title">2019</h4>
-                    <p className="card-text small">
+                    <h4 className="card-title" style={{ color: "white" }}>2019</h4>
+                    <p className="card-text small" style={{ color: "white" }}>
                       Социальная поддержка детей-инвалидов &quot;Твори
                       добро&quot;
                     </p>
@@ -194,10 +199,13 @@ function About() {
               </SwiperSlide>
               <SwiperSlide>
                 {' '}
-                <div className="card card-sm card-transition shadow-sm">
+                <div
+                  className="card card-sm card-transition shadow-sm"
+                  style={{ backgroundColor: "rgba(244,200,153)" }}
+                >
                   <div className="card-body text-center">
-                    <h4 className="card-title">2020</h4>
-                    <p className="card-text small">
+                    <h4 className="card-title" style={{ color: "white" }}>2020</h4>
+                    <p className="card-text small" style={{ color: "white" }}>
                       Турнир по шахматам среди инвалидов
                       совместно с РОО&quot;ХБШО&quot; России
                     </p>
@@ -206,10 +214,13 @@ function About() {
               </SwiperSlide>
               <SwiperSlide>
                 {' '}
-                <div className="card card-sm card-transition shadow-sm">
+                <div
+                  className="card card-sm card-transition shadow-sm"
+                  style={{ backgroundColor: "rgba(237,76,120)" }}
+                >
                   <div className="card-body text-center">
-                    <h4 className="card-title">2021</h4>
-                    <p className="card-text small">
+                    <h4 className="card-title" style={{ color: "white" }}>2021</h4>
+                    <p className="card-text small" style={{ color: "white" }}>
                       Решение соц. проблем инвалидов, помощь мед
                       учреждениям &quot;Я волонтер&quot;
                     </p>
@@ -218,10 +229,13 @@ function About() {
               </SwiperSlide>
               <SwiperSlide>
                 {' '}
-                <div className="card card-sm card-transition shadow-sm">
+                <div
+                  className="card card-sm card-transition shadow-sm"
+                  style={{ backgroundColor: "rgba(55,126,254)" }}
+                >
                   <div className="card-body text-center">
-                    <h4 className="card-title">2022</h4>
-                    <p className="card-text small">
+                    <h4 className="card-title" style={{ color: "white" }}>2022</h4>
+                    <p className="card-text small" style={{ color: "white" }}>
                       Проведение регулярных мероприятий и помощь в социализации детей-инвалидов
                     </p>
                   </div>
