@@ -1,5 +1,7 @@
-import img14 from '../img/480x320/img13.jpg'
-// import amazonLogo from '../img/amazon.svg'
+import imgLibraries from '../img/imgLibraries.jpg'
+import imgPiligrim from '../img/imgPiligrim.jpg'
+import imgHeart from '../img/imgHeart.jpg'
+import imgRainbow from '../img/imgRainbow.jpg'
 
 function Partners() {
   return (
@@ -15,7 +17,7 @@ function Partners() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src={img14}
+              src={imgRainbow}
               alt="7777"
             />
 
@@ -35,7 +37,7 @@ function Partners() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src={img14}
+              src={imgLibraries}
               alt="7777"
             />
 
@@ -55,7 +57,7 @@ function Partners() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src={img14}
+              src={imgPiligrim}
               alt="7777"
             />
             <div className="card-body">
@@ -71,7 +73,7 @@ function Partners() {
           <div className="card h-100">
             <img
               className="card-img-top"
-              src={img14}
+              src={imgHeart}
               alt="7777"
             />
 

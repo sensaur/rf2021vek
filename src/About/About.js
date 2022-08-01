@@ -5,13 +5,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {
   Pagination, FreeMode, Autoplay, Navigation,
 } from "swiper";
-import img6 from '../img/480x320/img6.jpg'
-import img7 from '../img/480x320/img7.jpg'
-import img12 from '../img/480x320/img12.jpg'
-import img14 from '../img/480x320/img14.jpg'
-import img16 from '../img/480x320/img16.jpg'
-import img25 from '../img/480x320/img25.jpg'
 import img27 from '../img/img27.jpg'
+import img01 from '../img/img01.jpg'
+import img02 from '../img/img02.jpg'
+import img03 from '../img/img03.jpg'
+import img04 from '../img/img04.jpg'
+import img05 from '../img/img05.jpg'
+import img06 from '../img/img06.jpg'
 import Partners from '../Partners/Partners'
 import SwiperSlider from "../SwiperSlider/SwiperSlider";
 // eslint-disable-next-line import/no-unresolved
@@ -43,21 +43,21 @@ function About() {
           <div className="col mb-3">
             <div
               className="bg-img-start"
-              style={{ backgroundImage: `url(${img7})`, height: '15rem' }}
+              style={{ backgroundImage: `url(${img01})`, height: '15rem' }}
             />
           </div>
 
           <div className="col-3 d-none d-md-block mb-3">
             <div
               className="bg-img-start"
-              style={{ backgroundImage: `url(${img6})`, height: '15rem' }}
+              style={{ backgroundImage: `url(${img02})`, height: '15rem' }}
             />
           </div>
 
           <div className="col mb-3">
             <div
               className="bg-img-start"
-              style={{ backgroundImage: `url(${img14})`, height: '15rem' }}
+              style={{ backgroundImage: `url(${img03})`, height: '15rem' }}
             />
           </div>
 
@@ -66,21 +66,21 @@ function About() {
           <div className="col mb-3 mb-md-0">
             <div
               className="bg-img-start"
-              style={{ backgroundImage: `url(${img25})`, height: '15rem' }}
+              style={{ backgroundImage: `url(${img04})`, height: '15rem' }}
             />
           </div>
 
           <div className="col-4 d-none d-md-block mb-3 mb-md-0">
             <div
               className="bg-img-start"
-              style={{ backgroundImage: `url(${img16})`, height: '15rem' }}
+              style={{ backgroundImage: `url(${img05})`, height: '15rem' }}
             />
           </div>
 
           <div className="col">
             <div
               className="bg-img-start"
-              style={{ backgroundImage: `url(${img12})`, height: '15rem' }}
+              style={{ backgroundImage: `url(${img06})`, height: '15rem' }}
             />
           </div>
         </div>
