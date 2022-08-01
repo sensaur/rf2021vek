@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 // eslint-disable-next-line import/no-unresolved
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper";
-import img10 from '../img/img10.jpg'
+// import img10 from '../img/img10.jpg'
 // import mailchimp from '../img/mailchimp-primary.svg'
 
 function SwiperSlider() {
@@ -26,13 +26,13 @@ function SwiperSlider() {
         <SwiperSlide>
           <div className="swiper-slide py-6">
             <figure className="w-md-65 text-center mx-md-auto py-6">
-              <div className="mb-3">
-                <img
-                  className="avatar avatar-xl avatar-circle"
-                  src={img10}
-                  alt="dd"
-                />
-              </div>
+              {/* <div className="mb-3"> */}
+              {/*  <img */}
+              {/*    className="avatar avatar-xl avatar-circle" */}
+              {/*    src={img10} */}
+              {/*    alt="dd" */}
+              {/*  /> */}
+              {/* </div> */}
               <blockquote className="blockquote">
                 Огромная благодарность Свистову Алексею – директору ОСОО “Россия XXI век” за его
                 отзывчивость и заботу о детях, он часто сам принимает участие в наших мероприятиях и
@@ -54,13 +54,13 @@ function SwiperSlider() {
         <SwiperSlide>
           <div className="swiper-slide py-6">
             <figure className="w-md-65 text-center mx-md-auto py-6">
-              <div className="mb-3">
-                <img
-                  className="avatar avatar-xl avatar-circle"
-                  src={img10}
-                  alt="dd"
-                />
-              </div>
+              {/* <div className="mb-3"> */}
+              {/*  <img */}
+              {/*    className="avatar avatar-xl avatar-circle" */}
+              {/*    src={img10} */}
+              {/*    alt="dd" */}
+              {/*  /> */}
+              {/* </div> */}
               <blockquote className="blockquote">
                 В поисках волонтерских проектов, набрела на сайт “Россия XXI век” и решила подать
                 заяву на волонтера. Меня пригласили поучаствовать в празднике ко дню защиты детей.
@@ -78,13 +78,13 @@ function SwiperSlider() {
         <SwiperSlide>
           <div className="swiper-slide py-6">
             <figure className="w-md-65 text-center mx-md-auto py-6">
-              <div className="mb-3">
-                <img
-                  className="avatar avatar-xl avatar-circle"
-                  src={img10}
-                  alt="dd"
-                />
-              </div>
+              {/* <div className="mb-3"> */}
+              {/*  <img */}
+              {/*    className="avatar avatar-xl avatar-circle" */}
+              {/*    src={img10} */}
+              {/*    alt="dd" */}
+              {/*  /> */}
+              {/* </div> */}
               <blockquote className="blockquote">
                 Благодарим за поддержку ОСОО “Россия XII век” и помощь в организации мероприятий по
                 социализации детей – инвалидов.
@@ -102,13 +102,13 @@ function SwiperSlider() {
         <SwiperSlide>
           <div className="swiper-slide py-6">
             <figure className="w-md-65 text-center mx-md-auto py-6">
-              <div className="mb-3">
-                <img
-                  className="avatar avatar-xl avatar-circle"
-                  src={img10}
-                  alt="dd"
-                />
-              </div>
+              {/* <div className="mb-3"> */}
+              {/*  <img */}
+              {/*    className="avatar avatar-xl avatar-circle" */}
+              {/*    src={img10} */}
+              {/*    alt="dd" */}
+              {/*  /> */}
+              {/* </div> */}
               <blockquote className="blockquote">
                 Приятно быть частью организации, которая стремиться привлечь не только
                 пожертвования, но и заботиться о том, чтобы дети с особенностями развития,
