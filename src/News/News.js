@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react"
+import moment from 'moment';
 import alex from "../img/img33.jpeg";
 // import rf21vek from "../img/900x450/rf21vek.png";
 import Client from "../Contentful";
 import Loader from "../Loader/Loader";
+import 'moment/locale/ru';
 
 function News() {
   useEffect(() => {
@@ -13,7 +15,7 @@ function News() {
   const [state, setState] = useState([])
   const [loader, setLoader] = useState(false)
   const formatData = (items) => {
-    console.log("items==>", items)
+    // console.log("items==>", items)
     const tempItems = items.map((item) => {
       const { id } = item.sys;
       // const image = item.imageShort?.fields.file.url
@@ -28,12 +30,12 @@ function News() {
         content_type: "articles",
         order: "sys.createdAt",
       })
-      console.log("response.items==>", response.items)
+      // console.log("response.items==>", response.items)
       const articles = formatData(response.items)
-      console.log("articles=>", articles)
+      // console.log("articles=>", articles)
       setState(articles);
       (setLoader(false))
-      console.log("state!!!=>>", state)
+      // console.log("state!!!=>>", state)
     } catch (error) {
       console.log(error)
     }
@@ -46,11 +48,11 @@ function News() {
     }());
   }, []);
 
-  console.log("state123", state)
-  console.log("loader", loader)
+  // console.log("state", state)
+  // console.log("loader", loader)
 
   if (loader) {
-    console.log(loader)
+    // console.log(loader)
     return <Loader />
   }
 
@@ -124,7 +126,7 @@ function News() {
 
                     <div className="flex-grow-1">
                       <div className="d-flex justify-content-end">
-                        <p className="card-text">25 марта 2022</p>
+                        <p className="card-text">{moment(el.datePublication).format('D MMMM YYYY')}</p>
                       </div>
                     </div>
                   </div>
