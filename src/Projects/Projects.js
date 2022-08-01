@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import Client from "../Contentful";
 import Loader from "../Loader/Loader";
 
-// import amazonLogo from "../img/amazon.svg";
-
 function Projects() {
   useEffect(() => {
     window.scrollTo(0, 0);

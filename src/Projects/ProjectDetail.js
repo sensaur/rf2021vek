@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { useUsersContext } from "../context";
 
 function ProjectDetail() {
@@ -12,7 +13,7 @@ function ProjectDetail() {
   // console.log(id)
   const { state } = useUsersContext()
   const project = state?.filter((el) => el.id === id)
-  // console.log(project[0])
+  console.log(project[0])
 
   return (
     <div
@@ -43,30 +44,7 @@ function ProjectDetail() {
           </div>
         </div>
       </div>
-      <h3 className="py-3 mx-1">
-        {project[0].header1}
-      </h3>
-      <p className="py-1 mx-1">
-        {project[0].text1}
-      </p>
-      <h3 className="mx-1">
-        {project[0].header2}
-      </h3>
-      <p className="py-1 mx-1">
-        {project[0].text2}
-      </p>
-      <p className="py-1 mx-1">
-        {project[0].text3}
-      </p>
-      <p className="py-1 mx-1">
-        {project[0].text4}
-      </p>
-      <p className="py-1 mx-1">
-        {project[0].text5}
-      </p>
-      <p className="py-1 mx-1">
-        {project[0].text6}
-      </p>
+      {documentToReactComponents(project[0].textMain1)}
     </div>
   );
 }
