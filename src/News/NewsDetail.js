@@ -1,9 +1,50 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+// import { BLOCKS, MARKS } from '@contentful/rich-text-types';
 import Client from "../Contentful";
 import Loader from "../Loader/Loader";
 import { numWord } from "../helpers/numWord";
+
+// eslint-disable-next-line react/prop-types
+function Blockquote({ children }) {
+  return (
+    <figure className="bg-light text-center p-7 my-7">
+      <blockquote className="blockquote blockquote-lg">{children}</blockquote>
+    </figure>
+  )
+}
+
+const options = {
+  renderMark: {
+    bold: (text) => <Blockquote>{text}</Blockquote>,
+  },
+  renderNode: {
+    blockquote: (node, children) => <Blockquote>{children}</Blockquote>,
+  },
+
+};
+
+const richTextDocument = {
+  nodeType: 'document',
+  data: {},
+  content: [
+    {
+      nodeType: 'paragraph',
+      data: {},
+      content: [
+        {
+          nodeType: 'text',
+          value: 'Hello',
+          data: {},
+          marks: [{ type: 'bold' }],
+        },
+      ],
+    },
+  ],
+};
+
+console.log("mapped", documentToReactComponents(richTextDocument, options))
 
 function NewsDetail() {
   const { id } = useParams()
@@ -65,6 +106,10 @@ function NewsDetail() {
   console.log("state!!!=>>", state)
   // console.log("oneNews!!!=>>", oneNews)
   // console.log(oneNews.image1?.fields.file.url)
+
+  // eslint-disable-next-line react/prop-types,react/no-unstable-nested-components
+  // console.log("121321", documentToReactComponents(oneNews.text1))
+  // console.log("mapped", documentToReactComponents(richTextDocument), options)
   if (loader) {
     return <Loader />
   }
@@ -78,6 +123,7 @@ function NewsDetail() {
     <div className="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
       <div className="w-lg-65 mx-lg-auto">
         <div className="mb-4">
+          {documentToReactComponents(richTextDocument, options)}
           <h1 className="h2">
             {oneNews.header}
           </h1>
