@@ -7,25 +7,15 @@ function Projects() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
-  // const { state } = useUsersContext()
-  // console.log(state)
-  // useEffect(() => {
-  //   console.log(state)
-  // }, [state])
-  //
+
   const [state, setState] = useState([])
   const [loader, setLoader] = useState(false)
-  //
-  const formatData = (items) => {
-    // console.log("items==>", items)
-    const tempItems = items.map((item) => {
-      const { id } = item.sys;
-      const image = item.fields.image.fields.file.url
-      const project = { ...item.fields, id, image }
-      return project
-    })
-    return tempItems
-  }
+
+  const formatData = (items) => items.map((item) => {
+    const { id } = item.sys;
+    const image = item.fields.image.fields.file.url
+    return { ...item.fields, id, image }
+  })
 
   const getData = async () => {
     try {
@@ -33,38 +23,20 @@ function Projects() {
         content_type: "projects",
         order: "sys.createdAt",
       })
-      // console.log("response.items==>", response.items)
       const projects = formatData(response.items)
-      // console.log("projects=>", projects)
       setState(projects);
       (setLoader(false))
-      // console.log("state!!!=>>", state)
     } catch (error) {
       console.log(error)
     }
   }
-
-  // const resultOfFunction = useMemo(() => ({
-  //   state, setState, getData,
-  // }), [state])
 
   useEffect(() => {
     setLoader(true);
     (async function resolve() { await getData(); }());
   }, []);
 
-  // useEffect(() => {
-  //   console.log("i am state from ue", state);
-  // }, [state]);
-
-  // console.log(setState)
-  // console.log(state)
-  // console.log(formatData)
-  // console.log(getData)
-  // eslint-disable-next-line no-unused-expressions
-  // state.image ? console.log("y") : console.log("n")
   if (state.image) {
-    console.log(state.image)
     return (
       <div className="container content-space-2 content-space-lg-3">
         <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
@@ -77,7 +49,6 @@ function Projects() {
   }
 
   if (loader) {
-    console.log(loader)
     return <Loader />
   }
 

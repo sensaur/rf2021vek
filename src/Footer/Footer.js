@@ -69,7 +69,6 @@ function Footer() {
           </div>
 
           <div className="col-lg-3 mb-7 mb-lg-0">
-            {/* <p className="link-sm link-light">КОНТАКТЫ</p> */}
             <ul className="list-unstyled list-py-1">
               <li>
                 <a className="link-sm link-light" href="mailto:info@rf21vek.ru">

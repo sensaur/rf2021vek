@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-// import { BLOCKS, MARKS } from '@contentful/rich-text-types';
 import Client from "../Contentful";
 import Loader from "../Loader/Loader";
 import { numWord } from "../helpers/numWord";
@@ -30,27 +29,6 @@ const options = {
 
 };
 
-const richTextDocument = {
-  nodeType: 'document',
-  data: {},
-  content: [
-    {
-      nodeType: 'paragraph',
-      data: {},
-      content: [
-        {
-          nodeType: 'text',
-          value: 'Hello',
-          data: {},
-          marks: [{ type: 'bold' }],
-        },
-      ],
-    },
-  ],
-};
-
-console.log("mapped", documentToReactComponents(richTextDocument, options))
-
 function NewsDetail() {
   const { id } = useParams()
 
@@ -58,18 +36,12 @@ function NewsDetail() {
     window.scrollTo(0, 0);
   }, [])
 
-  const [state, setState] = useState([])
-  // eslint-disable-next-line no-unused-vars
   const [oneNews, setOneNews] = useState({})
-  // eslint-disable-next-line no-unused-vars
   const [loader, setLoader] = useState(false)
   const formatData = (items) => {
-    // console.log("items==>", items)
     const tempItems = items.map((item) => {
-      // eslint-disable-next-line no-shadow
-      const { id } = item.sys;
+      const idFromServer = item.sys.id;
       const avatarUrl = item.fields.authorAvatar.fields.file.url
-      // const image1Url = item.fields.image1.fields.file.url
       const image1Url = item.fields.image1?.fields.file.url
       const image2Url = item.fields.image2?.fields.file.url
       const image3Url = item.fields.image3?.fields.file.url
@@ -79,7 +51,7 @@ function NewsDetail() {
       const image7Url = item.fields.image7?.fields.file.url
       const news = {
         ...item.fields,
-        id,
+        id: idFromServer,
         avatarUrl,
         image1Url,
         image2Url,
@@ -99,10 +71,7 @@ function NewsDetail() {
         content_type: "articles",
         order: "sys.createdAt",
       })
-      // console.log("response.items==>", response.items)
-      const news = formatData(response.items)
-      setState(news);
-      // console.log("news=>", news);
+      const news = formatData(response.items);
       (setLoader(false))
       setOneNews(news.filter((el) => el.id === id)[0])
     } catch (error) {
@@ -118,18 +87,6 @@ function NewsDetail() {
     setTimeout(() => setLoader(false), 1e3)
   }, []);
 
-  // console.log("loader", loader)
-  // console.log(documentToReactComponents)
-  // console.log(getData)
-  // console.log(oneNews[0].headingShort)
-  // console.log(id)
-  console.log("state!!!=>>", state)
-  console.log("oneNews!!!=>>", oneNews)
-  // console.log(oneNews.image1?.fields.file.url)
-
-  // eslint-disable-next-line react/prop-types,react/no-unstable-nested-components
-  // console.log("121321", documentToReactComponents(oneNews.text1))
-  // console.log("mapped", documentToReactComponents(richTextDocument), options)
   if (loader) {
     return <Loader />
   }
@@ -179,12 +136,6 @@ function NewsDetail() {
               </div>
             </div>
           </div>
-
-          {/* <div className="col-sm-5"> */}
-          {/*  <div className="d-flex justify-content-sm-end align-items-center"> */}
-          {/*    <span className="text-cap mb-0 me-2">{oneNews.company}</span> */}
-          {/*  </div> */}
-          {/* </div> */}
           {documentToReactComponents(oneNews.text1, options)}
         </div>
       </div>

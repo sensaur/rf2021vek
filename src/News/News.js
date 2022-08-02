@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react"
 import moment from 'moment';
-// import rf21vek from "../img/900x450/rf21vek.png";
 import Client from "../Contentful";
 import Loader from "../Loader/Loader";
 import 'moment/locale/ru';
@@ -14,10 +13,8 @@ function News() {
   const [state, setState] = useState([])
   const [loader, setLoader] = useState(false)
   const formatData = (items) => {
-    // console.log("items==>", items)
     const tempItems = items.map((item) => {
       const { id } = item.sys;
-      // const image = item.imageShort?.fields.file.url
       const avatarUrl = item.fields.authorAvatar.fields.file.url
       const news = { ...item.fields, id, avatarUrl }
       return news
@@ -30,12 +27,9 @@ function News() {
         content_type: "articles",
         order: "sys.createdAt",
       })
-      // console.log("response.items==>", response.items)
       const articles = formatData(response.items)
-      // console.log("articles=>", articles)
       setState(articles);
       (setLoader(false))
-      // console.log("state!!!=>>", state)
     } catch (error) {
       console.log(error)
     }
@@ -48,11 +42,7 @@ function News() {
     }());
   }, []);
 
-  // console.log("state", state)
-  // console.log("loader", loader)
-
   if (loader) {
-    // console.log(loader)
     return <Loader />
   }
 

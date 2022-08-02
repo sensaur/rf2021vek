@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { useUsersContext } from "../context";
+import Client from "../Contentful";
+import Loader from "../Loader/Loader";
 
 function ProjectDetail() {
   const { id } = useParams()
@@ -10,10 +11,41 @@ function ProjectDetail() {
     window.scrollTo(0, 0);
   }, [])
 
-  // console.log(id)
-  const { state } = useUsersContext()
-  const project = state?.filter((el) => el.id === id)
-  console.log(project[0])
+  const [loader, setLoader] = useState(false)
+  const [oneProject, setOneProject] = useState({})
+  const formatData = (items) => {
+    const tempItems = items.map((item) => {
+      const idFromServer = item.sys.id;
+      const image = item.fields.image.fields.file.url
+      const project = { ...item.fields, id: idFromServer, image }
+      return project
+    })
+    return tempItems
+  }
+  const getData = async () => {
+    try {
+      const response = await Client.getEntries({
+        content_type: "projects",
+        order: "sys.createdAt",
+      })
+      const projects = formatData(response.items);
+      (setLoader(false))
+      setOneProject(projects.filter((el) => el.id === id)[0])
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(() => {
+    setLoader(true);
+    (async function resolve() {
+      await getData();
+    }());
+  }, []);
+
+  if (loader) {
+    return <Loader />
+  }
 
   return (
     <div
@@ -29,23 +61,23 @@ function ProjectDetail() {
           <div className="px-3" />
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
             <span className="text-cap text-white-70">
-              {project[0].title}
+              {oneProject.title}
             </span>
             <h2 className="text-white">
-              {project[0].description}
+              {oneProject.description}
             </h2>
           </div>
           <div className="card h-100">
             <img
               className="card-img-top"
-              src={project[0].image}
+              src={oneProject.image}
               alt="dobro"
             />
           </div>
         </div>
       </div>
       <div className="mx-1">
-        {documentToReactComponents(project[0].textMain1)}
+        {documentToReactComponents(oneProject.textMain1)}
       </div>
     </div>
   );
