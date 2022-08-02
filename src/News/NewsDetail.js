@@ -22,7 +22,7 @@ function Blockquote({ children }) {
 
 const options = {
   renderMark: {
-    bold: (text) => <Blockquote>{text}</Blockquote>,
+    // bold: (text) => <Blockquote>{text}</Blockquote>,
   },
   renderNode: {
     blockquote: (node, children) => <Blockquote>{children}</Blockquote>,
@@ -238,7 +238,7 @@ function NewsDetail() {
           : ""}
       </div>
       <div className="w-lg-65 mx-lg-auto">
-        {documentToReactComponents(oneNews.text4, options)}
+        {documentToReactComponents(oneNews.text5, options)}
         {oneNews.image5Url ? (
           <div className="my-4 my-sm-8">
             <img
