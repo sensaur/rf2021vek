@@ -200,7 +200,7 @@ function NewsDetail() {
         : ""}
       <div className="w-lg-65 mx-lg-auto">
         {documentToReactComponents(oneNews.text2, options)}
-        {oneNews.image1Url ? (
+        {oneNews.image2Url ? (
           <div className="my-4 my-sm-8">
             <img
               className="img-fluid rounded-lg"
