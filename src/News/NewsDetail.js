@@ -10,7 +10,12 @@ import { numWord } from "../helpers/numWord";
 function Blockquote({ children }) {
   return (
     <figure className="bg-light text-center p-7 my-7">
-      <blockquote className="blockquote blockquote-lg">{children}</blockquote>
+      <blockquote
+        className="blockquote blockquote-lg text-end"
+        style={{ fontSize: "1rem" }}
+      >
+        {children}
+      </blockquote>
     </figure>
   )
 }
@@ -66,8 +71,23 @@ function NewsDetail() {
       const avatarUrl = item.fields.authorAvatar.fields.file.url
       // const image1Url = item.fields.image1.fields.file.url
       const image1Url = item.fields.image1?.fields.file.url
+      const image2Url = item.fields.image2?.fields.file.url
+      const image3Url = item.fields.image3?.fields.file.url
+      const image4Url = item.fields.image4?.fields.file.url
+      const image5Url = item.fields.image5?.fields.file.url
+      const image6Url = item.fields.image6?.fields.file.url
+      const image7Url = item.fields.image7?.fields.file.url
       const news = {
-        ...item.fields, id, avatarUrl, image1Url,
+        ...item.fields,
+        id,
+        avatarUrl,
+        image1Url,
+        image2Url,
+        image3Url,
+        image4Url,
+        image5Url,
+        image6Url,
+        image7Url,
       }
       return news
     })
@@ -104,7 +124,7 @@ function NewsDetail() {
   // console.log(oneNews[0].headingShort)
   // console.log(id)
   console.log("state!!!=>>", state)
-  // console.log("oneNews!!!=>>", oneNews)
+  console.log("oneNews!!!=>>", oneNews)
   // console.log(oneNews.image1?.fields.file.url)
 
   // eslint-disable-next-line react/prop-types,react/no-unstable-nested-components
@@ -123,7 +143,6 @@ function NewsDetail() {
     <div className="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
       <div className="w-lg-65 mx-lg-auto">
         <div className="mb-4">
-          {documentToReactComponents(richTextDocument, options)}
           <h1 className="h2">
             {oneNews.header}
           </h1>
@@ -161,13 +180,13 @@ function NewsDetail() {
             </div>
           </div>
 
-          <div className="col-sm-5">
-            <div className="d-flex justify-content-sm-end align-items-center">
-              <span className="text-cap mb-0 me-2">{oneNews.company}</span>
-            </div>
-          </div>
+          {/* <div className="col-sm-5"> */}
+          {/*  <div className="d-flex justify-content-sm-end align-items-center"> */}
+          {/*    <span className="text-cap mb-0 me-2">{oneNews.company}</span> */}
+          {/*  </div> */}
+          {/* </div> */}
+          {documentToReactComponents(oneNews.text1, options)}
         </div>
-        {documentToReactComponents(oneNews.text1)}
       </div>
       {oneNews.image1Url ? (
         <div className="my-4 my-sm-8">
@@ -179,6 +198,84 @@ function NewsDetail() {
         </div>
       )
         : ""}
+      <div className="w-lg-65 mx-lg-auto">
+        {documentToReactComponents(oneNews.text2, options)}
+        {oneNews.image1Url ? (
+          <div className="my-4 my-sm-8">
+            <img
+              className="img-fluid rounded-lg"
+              src={oneNews.image2Url}
+              alt="pic"
+            />
+          </div>
+        )
+          : ""}
+      </div>
+      <div className="w-lg-65 mx-lg-auto">
+        {documentToReactComponents(oneNews.text3, options)}
+        {oneNews.image3Url ? (
+          <div className="my-4 my-sm-8">
+            <img
+              className="img-fluid rounded-lg"
+              src={oneNews.image3Url}
+              alt="pic"
+            />
+          </div>
+        )
+          : ""}
+      </div>
+      <div className="w-lg-65 mx-lg-auto">
+        {documentToReactComponents(oneNews.text4, options)}
+        {oneNews.image4Url ? (
+          <div className="my-4 my-sm-8">
+            <img
+              className="img-fluid rounded-lg"
+              src={oneNews.image4Url}
+              alt="pic"
+            />
+          </div>
+        )
+          : ""}
+      </div>
+      <div className="w-lg-65 mx-lg-auto">
+        {documentToReactComponents(oneNews.text4, options)}
+        {oneNews.image5Url ? (
+          <div className="my-4 my-sm-8">
+            <img
+              className="img-fluid rounded-lg"
+              src={oneNews.image5Url}
+              alt="pic"
+            />
+          </div>
+        )
+          : ""}
+      </div>
+      <div className="w-lg-65 mx-lg-auto">
+        {documentToReactComponents(oneNews.text6, options)}
+        {oneNews.image6Url ? (
+          <div className="my-4 my-sm-8">
+            <img
+              className="img-fluid rounded-lg"
+              src={oneNews.image6Url}
+              alt="pic"
+            />
+          </div>
+        )
+          : ""}
+      </div>
+      <div className="w-lg-65 mx-lg-auto">
+        {documentToReactComponents(oneNews.text7, options)}
+        {oneNews.image7Url ? (
+          <div className="my-4 my-sm-8">
+            <img
+              className="img-fluid rounded-lg"
+              src={oneNews.image7Url}
+              alt="pic"
+            />
+          </div>
+        )
+          : ""}
+      </div>
     </div>
   );
 }
