@@ -12,6 +12,8 @@ import img03 from '../img/img03.jpg'
 import img04 from '../img/img04.jpg'
 import img05 from '../img/img05.jpg'
 import img06 from '../img/img06.jpg'
+import circledStripe from '../img/circled-stripe.svg'
+import dots from '../img/dots.svg'
 import Partners from '../Partners/Partners'
 import SwiperSlider from "../SwiperSlider/SwiperSlider";
 // eslint-disable-next-line import/no-unresolved
@@ -361,8 +363,11 @@ function About() {
               top: '15rem', left: '70rem', width: '20rem', height: '20rem',
             }}
           >
-            {/* <img className="img-fluid" src="./assets/svg/components/circled-stripe.svg" */}
-            {/*     alt="Image Description"> */}
+            <img
+              className="img-fluid"
+              src={circledStripe}
+              alt="Description"
+            />
           </figure>
 
           <figure
@@ -371,8 +376,11 @@ function About() {
               bottom: '11rem', left: "-3rem", width: "15rem", height: "15rem",
             }}
           >
-            {/* <img className="img-fluid" src="./assets/svg/components/dots.svg" */}
-            {/*     alt="Image Description"> */}
+            <img
+              className="img-fluid"
+              src={dots}
+              alt="Description"
+            />
           </figure>
         </div>
 
