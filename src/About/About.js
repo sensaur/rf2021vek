@@ -618,8 +618,8 @@ function About() {
                 <h1>Руководство</h1>
               </div>
 
-              <div className="row mb-7">
-                <div className="col-sm-6 col-md-3 mb-5 mb-lg-0">
+              <div className="row">
+                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
                     src={img27}
@@ -627,13 +627,13 @@ function About() {
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
-                      <h4 className="card-title">Свисов Алексей Александрович</h4>
+                      <h4 className="card-title">Свистов Алексей Александрович</h4>
                       <p className="card-text">Директор</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="col-sm-6 col-md-3 mb-5 mb-lg-0">
+                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
                     src={img27}
@@ -647,7 +647,7 @@ function About() {
                   </div>
                 </div>
 
-                <div className="col-sm-6 col-md-3 mb-5 mb-sm-0">
+                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
                     src={img27}
