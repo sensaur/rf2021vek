@@ -168,7 +168,7 @@ function About() {
           </figure>
 
           <figure
-            className="position-absolute zi-n1"
+            className="position-absolute zi-n1 d-none d-sm-block"
             style={{
               bottom: '15rem', left: "5rem", width: "15rem", height: "15rem",
             }}
@@ -431,9 +431,21 @@ function About() {
           </figure>
 
           <figure
-            className="position-absolute zi-n1"
+            className="position-absolute zi-n1 d-none d-sm-block"
             style={{
               bottom: '13rem', left: "-3rem", width: "15rem", height: "15rem",
+            }}
+          >
+            <img
+              className="img-fluid"
+              src={dots}
+              alt="Description"
+            />
+          </figure>
+          <figure
+            className="position-absolute zi-n1 d-block d-sm-none"
+            style={{
+              bottom: '21rem', left: "7rem", width: "10rem", height: "10rem",
             }}
           >
             <img
