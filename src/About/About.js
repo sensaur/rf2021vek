@@ -33,7 +33,7 @@ function About() {
         <div className="w-lg-75 text-center mx-lg-auto">
           <div className="mb-5 mb-md-10">
             <h1 className="display-4">Россия XXI век</h1>
-            <p className="lead content-space-t-lg-2">
+            <p className="lead content-space-t-lg-1">
               Благотворительная некоммерческая организация. Мы занимается благотворительной помощью,
               привлечением волонтеров и просто неравнодушных людей на помощь детям с инвалидностью и
               их родителям.
