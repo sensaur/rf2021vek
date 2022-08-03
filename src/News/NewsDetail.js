@@ -40,7 +40,6 @@ function NewsDetail() {
   const [loader, setLoader] = useState(false)
   const formatData = (items) => items.map((item) => {
     const idFromServer = item.sys.id;
-    // const avatarUrl = item.fields.authorAvatar.fields.file.url
     const image1Url = item.fields.image1?.fields.file.url
     const image2Url = item.fields.image2?.fields.file.url
     const image3Url = item.fields.image3?.fields.file.url
@@ -103,7 +102,8 @@ function NewsDetail() {
 
   const ONEDAY = 24 * 60 * 60 * 1000;
   const today = new Date()
-  const dateOfArticle = new Date(2022, 6, 4)
+  console.log("oneNews", oneNews)
+  const dateOfArticle = new Date(oneNews.datePublication)
   const days = Math.round(Math.abs(((today - dateOfArticle) / ONEDAY)))
 
   return (
