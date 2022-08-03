@@ -373,7 +373,7 @@ function About() {
           <figure
             className="position-absolute zi-n1"
             style={{
-              bottom: '11rem', left: "-3rem", width: "15rem", height: "15rem",
+              bottom: '13rem', left: "-3rem", width: "15rem", height: "15rem",
             }}
           >
             <img
