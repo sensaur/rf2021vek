@@ -11,7 +11,7 @@ import dots from "../img/dots.svg";
 // import img10 from '../img/img10.jpg'
 // import mailchimp from '../img/mailchimp-primary.svg'
 
-function SwiperSlider() {
+function Feedback() {
   return (
 
     <div className="gradient-y-sm-primary position-relative zi-2 overflow-hidden">
@@ -146,18 +146,6 @@ function SwiperSlider() {
             alt="Description"
           />
         </figure>
-        <figure
-          className="position-absolute zi-n1 d-block d-sm-none d-md-none"
-          style={{
-            bottom: '0rem', left: "8rem", width: "7rem", height: "7rem",
-          }}
-        >
-          <img
-            className="img-fluid"
-            src={dots}
-            alt="Description"
-          />
-        </figure>
       </div>
 
       <div className="shape shape-bottom zi-1">
@@ -175,4 +163,4 @@ function SwiperSlider() {
   );
 }
 
-export default SwiperSlider;
+export default Feedback;

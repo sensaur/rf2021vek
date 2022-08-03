@@ -15,7 +15,7 @@ import img06 from '../img/img06.jpg'
 import circledStripe from '../img/circled-stripe.svg'
 import dots from '../img/dots.svg'
 import Partners from '../Partners/Partners'
-import SwiperSlider from "../SwiperSlider/SwiperSlider";
+import Feedback from "../Feedback/Feedback";
 // eslint-disable-next-line import/no-unresolved
 import 'swiper/css';
 // eslint-disable-next-line import/no-unresolved
@@ -669,7 +669,7 @@ function About() {
           </div>
         </div>
       </div>
-      <SwiperSlider />
+      <Feedback />
     </main>
   );
 }

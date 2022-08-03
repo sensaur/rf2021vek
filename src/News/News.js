@@ -12,15 +12,14 @@ function News() {
 
   const [state, setState] = useState([])
   const [loader, setLoader] = useState(false)
-  const formatData = (items) => {
-    const tempItems = items.map((item) => {
-      const { id } = item.sys;
-      const avatarUrl = item.fields.authorAvatar.fields.file.url
-      const news = { ...item.fields, id, avatarUrl }
-      return news
-    })
-    return tempItems
-  }
+  const formatData = (items) => items.map((item) => {
+    const { id } = item.sys;
+    if (item.fields.authorAvatar) {
+      const avatarUrl = item?.fields.authorAvatar.fields.file.url
+      return { ...item.fields, id, avatarUrl }
+    }
+    return { ...item.fields, id, avatarUrl: "" }
+  })
   const getData = async () => {
     try {
       const response = await Client.getEntries({
@@ -89,37 +88,47 @@ function News() {
               <div className="card-body">
                 <h3 className="card-title">
                   <Link className="text-dark small" to={`/news/${el?.id}`}>
-                    {el.headingShort}
+                    {el?.headingShort}
                   </Link>
                 </h3>
 
                 <p className="card-text small">
-                  {el.shortDescription}
+                  {el?.shortDescription}
                 </p>
 
                 <div className="card-footer">
-                  <div className="d-flex align-items-center">
-                    <div className="flex-shrink-0 avatar-group avatar-group-xs">
-                      <div
-                        className="avatar avatar-xs avatar-circle"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        title="Aaron Larsson"
-                      >
-                        <img
-                          className="avatar-img"
-                          src={el.avatarUrl}
-                          alt="alex"
-                        />
+                  {el.avatarUrl === ""
+                    ? (
+                      <div className="flex-grow-1">
+                        <div className="d-flex justify-content-end">
+                          <p className="card-text">{moment(el.datePublication).format('D MMMM YYYY')}</p>
+                        </div>
                       </div>
-                    </div>
+                    )
+                    : (
+                      <div className="d-flex align-items-center">
+                        <div className="flex-shrink-0 avatar-group avatar-group-xs">
+                          <div
+                            className="avatar avatar-xs avatar-circle"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Aaron Larsson"
+                          >
+                            <img
+                              className="avatar-img"
+                              src={el?.avatarUrl}
+                              alt="author"
+                            />
+                          </div>
+                        </div>
 
-                    <div className="flex-grow-1">
-                      <div className="d-flex justify-content-end">
-                        <p className="card-text">{moment(el.datePublication).format('D MMMM YYYY')}</p>
+                        <div className="flex-grow-1">
+                          <div className="d-flex justify-content-end">
+                            <p className="card-text">{moment(el.datePublication).format('D MMMM YYYY')}</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                    )}
                 </div>
               </div>
             </div>
