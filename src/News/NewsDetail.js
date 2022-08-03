@@ -40,7 +40,7 @@ function NewsDetail() {
   const [loader, setLoader] = useState(false)
   const formatData = (items) => items.map((item) => {
     const idFromServer = item.sys.id;
-    const avatarUrl = item.fields.authorAvatar.fields.file.url
+    // const avatarUrl = item.fields.authorAvatar.fields.file.url
     const image1Url = item.fields.image1?.fields.file.url
     const image2Url = item.fields.image2?.fields.file.url
     const image3Url = item.fields.image3?.fields.file.url
@@ -48,10 +48,24 @@ function NewsDetail() {
     const image5Url = item.fields.image5?.fields.file.url
     const image6Url = item.fields.image6?.fields.file.url
     const image7Url = item.fields.image7?.fields.file.url
+    if (item.fields.authorAvatar) {
+      const avatarUrl = item?.fields.authorAvatar.fields.file.url
+      return {
+        ...item.fields,
+        id: idFromServer,
+        avatarUrl,
+        image1Url,
+        image2Url,
+        image3Url,
+        image4Url,
+        image5Url,
+        image6Url,
+        image7Url,
+      }
+    }
     return {
       ...item.fields,
       id: idFromServer,
-      avatarUrl,
       image1Url,
       image2Url,
       image3Url,
@@ -107,29 +121,42 @@ function NewsDetail() {
         <div className="row align-items-sm-center mb-5">
           <div className="col-sm-7 mb-4 mb-sm-0">
             <div className="d-flex align-items-center">
-              <div className="flex-shrink-0">
-                <img
-                  className="avatar avatar-circle"
-                  src={oneNews.avatarUrl}
-                  alt="ava"
-                />
-              </div>
+              {/* {oneNews.avatarUrl ? console.log("have") : console.log("absent")} */}
+              {oneNews.avatarUrl
 
-              <div className="flex-grow-1 ms-3">
-                <h5 className="mb-0">
-                  <a
-                    className="text-dark"
-                    href={oneNews.linkFromAvatar}
+                ? (
+                  <>
+                    <div className="flex-shrink-0">
+                      <img
+                        className="avatar avatar-circle"
+                        src={oneNews.avatarUrl}
+                        alt="ava"
+                      />
+                    </div>
+                    <div className="flex-grow-1 ms-3">
+                      <h5 className="mb-0">
+                        <a
+                          className="text-dark"
+                          href={oneNews.linkFromAvatar}
+                        >
+                          {oneNews.author}
+                        </a>
+                      </h5>
+                      <span
+                        className="d-block small"
+                      >
+                        {`${days} ${numWord(days, ['день', 'дня', 'дней'])} назад`}
+                      </span>
+                    </div>
+                  </>
+                )
+                : (
+                  <span
+                    className="d-block small"
                   >
-                    {oneNews.author}
-                  </a>
-                </h5>
-                <span
-                  className="d-block small"
-                >
-                  {`${days} ${numWord(days, ['день', 'дня', 'дней'])} назад`}
-                </span>
-              </div>
+                    {`${days} ${numWord(days, ['день', 'дня', 'дней'])} назад`}
+                  </span>
+                )}
             </div>
           </div>
           {documentToReactComponents(oneNews.text1, options)}
