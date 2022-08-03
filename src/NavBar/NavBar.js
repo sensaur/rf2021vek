@@ -1,6 +1,6 @@
 import { HashLink as Link } from 'react-router-hash-link';
 import telegram from '../img/telegram.svg'
-import whatsapp from '../img/whatsapp.svg'
+// import whatsapp from '../img/whatsapp.svg'
 import vk from '../img/vk.svg'
 
 function NavBar() {
@@ -48,9 +48,9 @@ function NavBar() {
             >
               <img className="" src={telegram} alt="Logo" height="30px" />
             </a>
-            <Link className="navbar-brand" to="/" aria-label="Front">
-              <img className="" src={whatsapp} alt="Logo" height="30px" />
-            </Link>
+            {/* <Link className="navbar-brand" to="/" aria-label="Front"> */}
+            {/*  <img className="" src={whatsapp} alt="Logo" height="30px" /> */}
+            {/* </Link> */}
             <Link className="navbar-brand" to="/" aria-label="Front">
               <img className="" src={vk} alt="Logo" height="30px" />
             </Link>

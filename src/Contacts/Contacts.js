@@ -23,12 +23,12 @@ function Contacts() {
           <div className="row py-2">
             <div className="col-sm-6">
               <h5 className="mb-1">Телефон:</h5>
-              <a href="tel:7-495-120-25-53" className="link-dark">+7 (495) 120-25-53</a>
+              <a href="tel:7-495-150-80-57" className="link-dark">+7 (495) 150-80-57</a>
             </div>
 
             <div className="col-sm-6">
               <h5 className="mb-1">Email:</h5>
-              <a className="link-dark" href="mailto:info@xn--21-flcmlqwpka9m.xn--p1ai">info@россия21век.рф</a>
+              <a className="link-dark" href="info@rf21vek.ru">info@rf21vek.ru</a>
             </div>
 
             <div className="col-sm-6">

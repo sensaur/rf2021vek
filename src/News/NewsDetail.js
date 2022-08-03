@@ -10,7 +10,7 @@ function Blockquote({ children }) {
   return (
     <figure className="bg-light text-center p-7 my-7">
       <blockquote
-        className="blockquote blockquote-lg text-end"
+        className="blockquote blockquote-lg text-start"
         style={{ fontSize: "1rem" }}
       >
         {children}

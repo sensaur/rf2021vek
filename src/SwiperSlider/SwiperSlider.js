@@ -11,7 +11,7 @@ import { Pagination, Navigation } from "swiper";
 
 function SwiperSlider() {
   return (
-    <div className="container">
+    <div className="container content-space-2">
       <h1 className="text-center">
         Отзывы
       </h1>

@@ -107,7 +107,7 @@ function About() {
               Благодаря нашим связям и опыту работы, мы привлекаем различных бизнесменов — наших
               единомышленников, неравнодушных людей, которые хотят помочь.
             </p>
-            <p>Наша деятельность:</p>
+            <p style={{ fontSize: "1.5rem" }}><b>Наша деятельность:</b></p>
             <ul className="list-unstyled list-py-2">
               <li>
                 <span className="legend-indicator bg-primary" />
@@ -397,7 +397,7 @@ function About() {
         </div>
       </div>
 
-      <div className="border-top container content-space-2 content-space-lg-3" id="vol">
+      <div className="border-top container content-space-2 content-space-lg-0" id="vol">
         <div className="container">
           <h1 className="text-center">Информация для волонтеров</h1>
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
@@ -553,13 +553,12 @@ function About() {
               </Link>
             </div>
 
-            <div className="container content-space-1">
+            <div className="container content-space-2">
               <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
                 <h1>Руководство</h1>
-                {/* <h2>Доверяйте профессианалам</h2> */}
               </div>
 
-              <div className="row mb-7" id="ceo">
+              <div className="row mb-7">
                 <div className="col-sm-6 col-md-3 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
@@ -601,24 +600,6 @@ function About() {
                         Заместитель председателя по медицинскому и
                         социальному сотрудничествуr
                       </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-sm-6 col-md-3">
-                  <img
-                    className="card-img rounded-2"
-                    src={img27}
-                    alt="888"
-                  />
-                  <div className="card card-sm text-center mt-n7 mx-3">
-                    <div className="card-body">
-                      <h4 className="card-title">Орнелла</h4>
-                      <p className="card-text">Lead Designer</p>
-                      {/* <p style={{ fontSize: '12px' }}> */}
-                      {/*  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis */}
-                      {/*  cupiditate eum numquam sunt suscipit veniam. */}
-                      {/* </p> */}
                     </div>
                   </div>
                 </div>

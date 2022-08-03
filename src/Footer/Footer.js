@@ -79,12 +79,12 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a className="link-sm link-light" href="tel:7-495-120-25-53">
+                <a className="link-sm link-light" href="tel:7-495-150-80-57">
                   <i
                     className="bi-telephone-inbound-fill me-1"
                   />
                   {' '}
-                  +7 (495) 120-25-53
+                  +7 (495) 150-80-57
                 </a>
               </li>
               <li className="link-sm link-light">
