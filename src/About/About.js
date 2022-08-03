@@ -32,8 +32,9 @@ function About() {
       <div className="container content-space-t-3 content-space-t-lg-3" style={{ marginBottom: "5rem" }}>
         <div className="w-lg-75 text-center mx-lg-auto">
           <div className="mb-5 mb-md-10">
-            <h1 className="display-4">Россия XXI век</h1>
-            <p className="lead content-space-t-lg-1">
+            <h1 style={{ fontSize: "calc(1.475rem + 2.7vw)", margin: "0" }}>Россия XXI век</h1>
+            {/* <p className="lead content-space-t-lg-1"> */}
+            <p className="lead" style={{ paddingTop: "48px" }}>
               Благотворительная некоммерческая организация. Мы занимается благотворительной помощью,
               привлечением волонтеров и просто неравнодушных людей на помощь детям с инвалидностью и
               их родителям.

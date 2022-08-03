@@ -41,7 +41,7 @@ function NavBar() {
             </Link>
             <a
               className="navbar-brand"
-              href="http://t.me/russia21st"
+              href="http://t.me/+79202004817"
               rel="noreferrer"
               target="_blank"
               aria-label="Front"
@@ -51,9 +51,9 @@ function NavBar() {
             {/* <Link className="navbar-brand" to="/" aria-label="Front"> */}
             {/*  <img className="" src={whatsapp} alt="Logo" height="30px" /> */}
             {/* </Link> */}
-            <Link className="navbar-brand" to="/" aria-label="Front">
+            <a className="navbar-brand" href="https://vk.com/public214792240" aria-label="Front" target="_blank" rel="noreferrer">
               <img className="" src={vk} alt="Logo" height="30px" />
-            </Link>
+            </a>
           </div>
           <button
             type="button"
