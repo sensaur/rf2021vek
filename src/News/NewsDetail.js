@@ -32,39 +32,35 @@ const options = {
 function NewsDetail() {
   const { id } = useParams()
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [])
 
   const [oneNews, setOneNews] = useState({})
   const [loader, setLoader] = useState(false)
-  const formatData = (items) => {
-    const tempItems = items.map((item) => {
-      const idFromServer = item.sys.id;
-      const avatarUrl = item.fields.authorAvatar.fields.file.url
-      const image1Url = item.fields.image1?.fields.file.url
-      const image2Url = item.fields.image2?.fields.file.url
-      const image3Url = item.fields.image3?.fields.file.url
-      const image4Url = item.fields.image4?.fields.file.url
-      const image5Url = item.fields.image5?.fields.file.url
-      const image6Url = item.fields.image6?.fields.file.url
-      const image7Url = item.fields.image7?.fields.file.url
-      const news = {
-        ...item.fields,
-        id: idFromServer,
-        avatarUrl,
-        image1Url,
-        image2Url,
-        image3Url,
-        image4Url,
-        image5Url,
-        image6Url,
-        image7Url,
-      }
-      return news
-    })
-    return tempItems
-  }
+  const formatData = (items) => items.map((item) => {
+    const idFromServer = item.sys.id;
+    const avatarUrl = item.fields.authorAvatar.fields.file.url
+    const image1Url = item.fields.image1?.fields.file.url
+    const image2Url = item.fields.image2?.fields.file.url
+    const image3Url = item.fields.image3?.fields.file.url
+    const image4Url = item.fields.image4?.fields.file.url
+    const image5Url = item.fields.image5?.fields.file.url
+    const image6Url = item.fields.image6?.fields.file.url
+    const image7Url = item.fields.image7?.fields.file.url
+    return {
+      ...item.fields,
+      id: idFromServer,
+      avatarUrl,
+      image1Url,
+      image2Url,
+      image3Url,
+      image4Url,
+      image5Url,
+      image6Url,
+      image7Url,
+    }
+  })
   const getData = async () => {
     try {
       const response = await Client.getEntries({
@@ -152,9 +148,10 @@ function NewsDetail() {
       <div className="w-lg-65 mx-lg-auto">
         {documentToReactComponents(oneNews.text2, options)}
         {oneNews.image2Url ? (
-          <div className="my-4 my-sm-8">
+          <div className="my-4 my-sm-8 text-center">
             <img
               className="img-fluid rounded-lg"
+              style={{ maxHeight: "400px" }}
               src={oneNews.image2Url}
               alt="pic"
             />
@@ -165,9 +162,10 @@ function NewsDetail() {
       <div className="w-lg-65 mx-lg-auto">
         {documentToReactComponents(oneNews.text3, options)}
         {oneNews.image3Url ? (
-          <div className="my-4 my-sm-8">
+          <div className="my-4 my-sm-8 text-center">
             <img
               className="img-fluid rounded-lg"
+              style={{ maxHeight: "400px" }}
               src={oneNews.image3Url}
               alt="pic"
             />
@@ -178,9 +176,10 @@ function NewsDetail() {
       <div className="w-lg-65 mx-lg-auto">
         {documentToReactComponents(oneNews.text4, options)}
         {oneNews.image4Url ? (
-          <div className="my-4 my-sm-8">
+          <div className="my-4 my-sm-8 text-center">
             <img
               className="img-fluid rounded-lg"
+              style={{ maxHeight: "400px" }}
               src={oneNews.image4Url}
               alt="pic"
             />
@@ -191,9 +190,10 @@ function NewsDetail() {
       <div className="w-lg-65 mx-lg-auto">
         {documentToReactComponents(oneNews.text5, options)}
         {oneNews.image5Url ? (
-          <div className="my-4 my-sm-8">
+          <div className="my-4 my-sm-8 text-center">
             <img
               className="img-fluid rounded-lg"
+              style={{ maxHeight: "400px" }}
               src={oneNews.image5Url}
               alt="pic"
             />
@@ -204,9 +204,10 @@ function NewsDetail() {
       <div className="w-lg-65 mx-lg-auto">
         {documentToReactComponents(oneNews.text6, options)}
         {oneNews.image6Url ? (
-          <div className="my-4 my-sm-8">
+          <div className="my-4 my-sm-8 text-center">
             <img
               className="img-fluid rounded-lg"
+              style={{ maxHeight: "400px" }}
               src={oneNews.image6Url}
               alt="pic"
             />
@@ -217,9 +218,10 @@ function NewsDetail() {
       <div className="w-lg-65 mx-lg-auto">
         {documentToReactComponents(oneNews.text7, options)}
         {oneNews.image7Url ? (
-          <div className="my-4 my-sm-8">
+          <div className="my-4 my-sm-8 text-center">
             <img
               className="img-fluid rounded-lg"
+              style={{ maxHeight: "400px" }}
               src={oneNews.image7Url}
               alt="pic"
             />
