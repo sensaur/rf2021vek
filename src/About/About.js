@@ -29,7 +29,7 @@ function About() {
   // }, [])
   return (
     <main id="content" role="main">
-      <div className="container content-space-t-3 content-space-t-lg-3">
+      <div className="container content-space-t-3 content-space-t-lg-3" style={{ marginBottom: "5rem" }}>
         <div className="w-lg-75 text-center mx-lg-auto">
           <div className="mb-5 mb-md-10">
             <h1 className="display-4">Россия XXI век</h1>
@@ -90,47 +90,107 @@ function About() {
 
       <div className="border-top mx-auto" style={{ maxWidth: '25rem' }} />
 
-      <div className="container content-space-2 content-space-lg-3">
-        <div className="row justify-content-lg-between">
-          <div className="col-lg-4 mb-5 mb-lg-0">
-            <h2>О НАС</h2>
+      <div className="gradient-y-sm-primary position-relative zi-2 overflow-hidden">
+        <div
+          className="container position-relative content-space-t-3 content-space-t-lg-4 content-space-b-2"
+        >
+
+          <div className="row justify-content-lg-between">
+            <div className="col-lg-4 mb-5 mb-lg-0">
+              <h2>О НАС</h2>
+            </div>
+
+            <div className="col-lg-6 zi-2">
+              <p>
+                Общероссийский союз общественных объединений содействия построению социального
+                государства «Россия XXI век» был основан в 2018 году.
+              </p>
+              <p>
+                Наш посыл заключается в том, что в социальном государстве, самые незащищенные слои
+                населения должны получать помощь, социализироваться и вести полноценный образ жизни.
+                Благодаря нашим связям и опыту работы, мы привлекаем различных бизнесменов — наших
+                единомышленников, неравнодушных людей, которые хотят помочь.
+              </p>
+              <p style={{ fontSize: "1.5rem" }}><b>Наша деятельность:</b></p>
+              <ul className="list-unstyled list-py-2">
+                <li>
+                  <span className="legend-indicator bg-primary" />
+                  Оказание медицинской помощи;
+                </li>
+                <li>
+                  <span className="legend-indicator bg-primary" />
+                  Распределение нуждающихся в медучреждения, по необходимости и запросу;
+                </li>
+                <li>
+                  <span className="legend-indicator bg-primary" />
+                  Помощью в реабилитации детей инвалидов;
+                </li>
+                <li>
+                  <span className="legend-indicator bg-primary" />
+                  Социализацию детей, организацию различного досуга и мероприятий;
+                </li>
+                <li>
+                  <span className="legend-indicator bg-primary" />
+                  Привлечение волонтеров для разносторонней помощи;
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div className="col-lg-6">
-            <p>
-              Общероссийский союз общественных объединений содействия построению социального
-              государства «Россия XXI век» был основан в 2018 году.
-            </p>
-            <p>
-              Наш посыл заключается в том, что в социальном государстве, самые незащищенные слои
-              населения должны получать помощь, социализироваться и вести полноценный образ жизни.
-              Благодаря нашим связям и опыту работы, мы привлекаем различных бизнесменов — наших
-              единомышленников, неравнодушных людей, которые хотят помочь.
-            </p>
-            <p style={{ fontSize: "1.5rem" }}><b>Наша деятельность:</b></p>
-            <ul className="list-unstyled list-py-2">
-              <li>
-                <span className="legend-indicator bg-primary" />
-                Оказание медицинской помощи;
-              </li>
-              <li>
-                <span className="legend-indicator bg-primary" />
-                Распределение нуждающихся в медучреждения, по необходимости и запросу;
-              </li>
-              <li>
-                <span className="legend-indicator bg-primary" />
-                Помощью в реабилитации детей инвалидов;
-              </li>
-              <li>
-                <span className="legend-indicator bg-primary" />
-                Социализацию детей, организацию различного досуга и мероприятий;
-              </li>
-              <li>
-                <span className="legend-indicator bg-primary" />
-                Привлечение волонтеров для разносторонней помощи;
-              </li>
-            </ul>
-          </div>
+          <figure
+            className="position-absolute zi-n1"
+            style={{
+              top: "-35rem", left: "50rem", width: "62rem", height: "62rem",
+            }}
+          >
+            <svg
+              preserveAspectRatio="none"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              viewBox="0 0 260 260"
+            >
+              <circle fill="#e7eaf3" opacity=".7" cx="130" cy="130" r="130" />
+            </svg>
+          </figure>
+
+          <figure
+            className="position-absolute zi-n1"
+            style={{
+              top: '15rem', left: '70rem', width: '20rem', height: '20rem',
+            }}
+          >
+            <img
+              className="img-fluid"
+              src={circledStripe}
+              alt="Description"
+            />
+          </figure>
+
+          <figure
+            className="position-absolute zi-n1"
+            style={{
+              bottom: '15rem', left: "5rem", width: "15rem", height: "15rem",
+            }}
+          >
+            <img
+              className="img-fluid"
+              src={dots}
+              alt="Description"
+            />
+          </figure>
+        </div>
+
+        <div className="shape shape-bottom zi-1">
+          <svg
+            width="3000"
+            height="500"
+            viewBox="0 0 3000 500"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 500H3000V0L0 500Z" fill="#fff" />
+          </svg>
         </div>
       </div>
 
