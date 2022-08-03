@@ -30,7 +30,6 @@ function SwiperSlider() {
             }}
             navigation
             modules={[Navigation, Pagination]}
-            // style={{ height: '700px' }}
           >
             <SwiperSlide>
               <div className="swiper-slide py-6">
@@ -148,9 +147,9 @@ function SwiperSlider() {
           />
         </figure>
         <figure
-          className="position-absolute zi-n1 d-block d-sm-none"
+          className="position-absolute zi-n1 d-block d-sm-none d-md-none"
           style={{
-            bottom: '21rem', left: "7rem", width: "10rem", height: "10rem",
+            bottom: '0rem', left: "8rem", width: "7rem", height: "7rem",
           }}
         >
           <img

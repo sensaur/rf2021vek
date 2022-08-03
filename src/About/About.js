@@ -307,7 +307,7 @@ function About() {
 
           </div>
           {/* mobile */}
-          <div className="js-swiper-software-hero swiper zi-2 d-block d-sm-none">
+          <div className="js-swiper-software-hero swiper zi-2 d-block d-sm-none d-md-none">
 
             <Swiper
               slidesPerView={1}
@@ -434,18 +434,6 @@ function About() {
             className="position-absolute zi-n1 d-none d-sm-block"
             style={{
               bottom: '13rem', left: "-3rem", width: "15rem", height: "15rem",
-            }}
-          >
-            <img
-              className="img-fluid"
-              src={dots}
-              alt="Description"
-            />
-          </figure>
-          <figure
-            className="position-absolute zi-n1 d-block d-sm-none"
-            style={{
-              bottom: '21rem', left: "7rem", width: "10rem", height: "10rem",
             }}
           >
             <img
