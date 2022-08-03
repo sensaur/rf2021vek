@@ -458,8 +458,9 @@ function About() {
         </div>
       </div>
 
-      <div className="border-top container content-space-2 content-space-lg-0" id="vol">
+      <div className="border-top container content-space-2 content-space-lg-1">
         <div className="container">
+          <div id="vol" style={{ height: "80px" }} />
           <h1 className="text-center">Информация для волонтеров</h1>
           <div className="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
             <p>
