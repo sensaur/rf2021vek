@@ -28,7 +28,7 @@ function Contacts() {
 
             <div className="col-sm-6">
               <h5 className="mb-1">Email:</h5>
-              <a className="link-dark" href="info@rf21vek.ru">info@rf21vek.ru</a>
+              <a className="link-dark" href="mailto:info@rf21vek.ru">info@rf21vek.ru</a>
             </div>
 
             <div className="col-sm-6">
@@ -42,7 +42,7 @@ function Contacts() {
               <h5 className="mb-1 py-1">Соц сети:</h5>
               <a
                 className="btn btn-ghost-secondary btn-sm btn-icon rounded-circle me-2"
-                href="http://t.me/russia21st"
+                href="https://vk.com/public214792240"
               >
                 <span className="btn btn-ghost-secondary btn-sm btn-icon rounded-circle me-2">
                   <svg
@@ -71,7 +71,7 @@ function Contacts() {
               </a>
               <a
                 className="btn btn-ghost-secondary btn-sm btn-icon rounded-circle me-2"
-                href="http://t.me/russia21st"
+                href="http://t.me/+79202004817"
               >
                 <i className="bi-telegram" />
               </a>
