@@ -29,13 +29,16 @@ function About() {
   // }, [])
   return (
     <main id="content" role="main">
-      <div className="container content-space-t-3 content-space-t-lg-3" style={{ marginBottom: "5rem" }}>
+      <div
+        className="container content-space-t-3 content-space-t-lg-3"
+        style={{ marginBottom: "5rem" }}
+      >
         <div className="w-lg-75 text-center mx-lg-auto">
           <div className="mb-5 mb-md-10">
             <h1 style={{ fontSize: "calc(1.475rem + 2.7vw)", margin: "0" }}>Россия XXI век</h1>
             {/* <p className="lead content-space-t-lg-1"> */}
             <p className="lead" style={{ paddingTop: "48px" }}>
-              Благотворительная некоммерческая организация. Мы занимается благотворительной помощью,
+              Благотворительная некоммерческая организация. Мы занимаемся благотворительной помощью,
               привлечением волонтеров и просто неравнодушных людей на помощь детям с инвалидностью и
               их родителям.
             </p>
@@ -110,7 +113,7 @@ function About() {
                 Наш посыл заключается в том, что в социальном государстве, самые незащищенные слои
                 населения должны получать помощь, социализироваться и вести полноценный образ жизни.
                 Благодаря нашим связям и опыту работы, мы привлекаем различных бизнесменов — наших
-                единомышленников, неравнодушных людей, которые хотят помочь.
+                единомышленников, и неравнодушных людей, которые хотят помочь.
               </p>
               <p style={{ fontSize: "1.5rem" }}><b>Наша деятельность:</b></p>
               <ul className="list-unstyled list-py-2">
@@ -124,11 +127,11 @@ function About() {
                 </li>
                 <li>
                   <span className="legend-indicator bg-primary" />
-                  Помощью в реабилитации детей инвалидов;
+                  Помощь в реабилитации детей инвалидов;
                 </li>
                 <li>
                   <span className="legend-indicator bg-primary" />
-                  Социализацию детей, организацию различного досуга и мероприятий;
+                  Социализация детей, организация различного досуга и мероприятий;
                 </li>
                 <li>
                   <span className="legend-indicator bg-primary" />
@@ -284,8 +287,7 @@ function About() {
                   <div className="card-body text-center">
                     <h4 className="card-title" style={{ color: "white" }}>2021</h4>
                     <p className="card-text small" style={{ color: "white" }}>
-                      Решение соц. проблем инвалидов, помощь мед
-                      учреждениям &quot;Я волонтер&quot;
+                      Решение соц. проблем инвалидов, помощь мед учреждениям &quot;Я волонтер&quot;
                     </p>
                   </div>
                 </div>
