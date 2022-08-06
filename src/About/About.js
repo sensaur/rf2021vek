@@ -6,11 +6,8 @@ import {
   Pagination, Autoplay, Navigation,
 } from "swiper";
 import svi01 from '../img/svi01.jpg'
-import svi02 from '../img/svi02.jpg'
-import kul01 from '../img/kul01.jpg'
-import kul02 from '../img/kul02.jpg'
-import orl01 from '../img/orl01.jpg'
-import orl02 from '../img/orl02.jpg'
+import kul03 from '../img/kul03.jpg'
+import orl03 from '../img/orl03.jpg'
 import img01 from '../img/img01.jpg'
 import img02 from '../img/img02.jpg'
 import img03 from '../img/img03.jpg'
@@ -642,7 +639,7 @@ function About() {
                 <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
-                    src={kul01}
+                    src={kul03}
                     alt="888"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
@@ -656,7 +653,7 @@ function About() {
                 <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
-                    src={orl01}
+                    src={orl03}
                     alt="888"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
@@ -671,60 +668,6 @@ function About() {
                 </div>
               </div>
             </div>
-
-            <div className="container content-space-2">
-              <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-                <h1>Руководство</h1>
-              </div>
-
-              <div className="row">
-                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
-                  <img
-                    className="card-img rounded-2"
-                    src={svi02}
-                    alt="888"
-                  />
-                  <div className="card card-sm text-center mt-n7 mx-3">
-                    <div className="card-body">
-                      <h4 className="card-title">Свистов Алексей Александрович</h4>
-                      <p className="card-text">Директор</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
-                  <img
-                    className="card-img rounded-2"
-                    src={kul02}
-                    alt="888"
-                  />
-                  <div className="card card-sm text-center mt-n7 mx-3">
-                    <div className="card-body">
-                      <h4 className="card-title">Кулайкин Сергей Владимирович</h4>
-                      <p className="card-text">Заместитель председателя по общим вопросам</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
-                  <img
-                    className="card-img rounded-2"
-                    src={orl02}
-                    alt="888"
-                  />
-                  <div className="card card-sm text-center mt-n7 mx-3">
-                    <div className="card-body">
-                      <h4 className="card-title">Орлов Сергей Валерьевич</h4>
-                      <p className="card-text">
-                        Заместитель председателя по медицинскому и
-                        социальному сотрудничеству
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
