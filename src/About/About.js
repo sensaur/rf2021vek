@@ -5,7 +5,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {
   Pagination, Autoplay, Navigation,
 } from "swiper";
-import img27 from '../img/img27.jpg'
+import svi01 from '../img/svi01.jpg'
+import svi02 from '../img/svi02.jpg'
+import kul01 from '../img/kul01.jpg'
+import kul02 from '../img/kul02.jpg'
+import orl01 from '../img/orl01.jpg'
+import orl02 from '../img/orl02.jpg'
 import img01 from '../img/img01.jpg'
 import img02 from '../img/img02.jpg'
 import img03 from '../img/img03.jpg'
@@ -39,8 +44,7 @@ function About() {
             {/* <p className="lead content-space-t-lg-1"> */}
             <p className="lead" style={{ paddingTop: "48px" }}>
               Благотворительная некоммерческая организация. Мы занимаемся благотворительной помощью,
-              привлечением волонтеров и просто неравнодушных людей на помощь детям с инвалидностью и
-              их родителям.
+              привлечением волонтеров на помощь детям с инвалидностью и их родителям.
             </p>
           </div>
         </div>
@@ -110,10 +114,9 @@ function About() {
                 государства «Россия XXI век» был основан в 2018 году.
               </p>
               <p>
-                Наш посыл заключается в том, что в социальном государстве, самые незащищенные слои
-                населения должны получать помощь, социализироваться и вести полноценный образ жизни.
-                Благодаря нашим связям и опыту работы, мы привлекаем различных бизнесменов — наших
-                единомышленников, и неравнодушных людей, которые хотят помочь.
+                Благодаря нашим связям и опыту, мы привлекаем квалифицированных специалистов,
+                которые работают в различных сферах, и на общественных началах задействованы в нашей
+                организации.
               </p>
               <p style={{ fontSize: "1.5rem" }}><b>Наша деятельность:</b></p>
               <ul className="list-unstyled list-py-2">
@@ -287,7 +290,7 @@ function About() {
                   <div className="card-body text-center">
                     <h4 className="card-title" style={{ color: "white" }}>2021</h4>
                     <p className="card-text small" style={{ color: "white" }}>
-                      Решение соц. проблем инвалидов, помощь мед учреждениям &quot;Я волонтер&quot;
+                      Решение соц. проблем инвалидов, помощь медучреждениям &quot;Я волонтер&quot;
                     </p>
                   </div>
                 </div>
@@ -379,8 +382,7 @@ function About() {
                   <div className="card-body text-center">
                     <h4 className="card-title" style={{ color: "white" }}>2021</h4>
                     <p className="card-text small" style={{ color: "white" }}>
-                      Решение соц. проблем инвалидов, помощь мед
-                      учреждениям &quot;Я волонтер&quot;
+                      Решение соц. проблем инвалидов, помощь медучреждениям &quot;Я волонтер&quot;
                     </p>
                   </div>
                 </div>
@@ -626,7 +628,7 @@ function About() {
                 <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
-                    src={img27}
+                    src={svi01}
                     alt="888"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
@@ -640,7 +642,7 @@ function About() {
                 <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
-                    src={img27}
+                    src={kul01}
                     alt="888"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
@@ -654,7 +656,60 @@ function About() {
                 <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
-                    src={img27}
+                    src={orl01}
+                    alt="888"
+                  />
+                  <div className="card card-sm text-center mt-n7 mx-3">
+                    <div className="card-body">
+                      <h4 className="card-title">Орлов Сергей Валерьевич</h4>
+                      <p className="card-text">
+                        Заместитель председателя по медицинскому и
+                        социальному сотрудничествуr
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="container content-space-2">
+              <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+                <h1>Руководство</h1>
+              </div>
+
+              <div className="row">
+                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
+                  <img
+                    className="card-img rounded-2"
+                    src={svi02}
+                    alt="888"
+                  />
+                  <div className="card card-sm text-center mt-n7 mx-3">
+                    <div className="card-body">
+                      <h4 className="card-title">Свистов Алексей Александрович</h4>
+                      <p className="card-text">Директор</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
+                  <img
+                    className="card-img rounded-2"
+                    src={kul02}
+                    alt="888"
+                  />
+                  <div className="card card-sm text-center mt-n7 mx-3">
+                    <div className="card-body">
+                      <h4 className="card-title">Кулайкин Сергей Владимирович</h4>
+                      <p className="card-text">Заместитель председателя по общим вопросам</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
+                  <img
+                    className="card-img rounded-2"
+                    src={orl02}
                     alt="888"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
