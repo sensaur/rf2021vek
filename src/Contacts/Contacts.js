@@ -71,7 +71,7 @@ function Contacts() {
               </a>
               <a
                 className="btn btn-ghost-secondary btn-sm btn-icon rounded-circle me-2"
-                href="http://t.me/+79202004817"
+                href="http://t.me/timdo"
               >
                 <i className="bi-telegram" />
               </a>

@@ -41,7 +41,7 @@ function NavBar() {
             </Link>
             <a
               className="navbar-brand"
-              href="http://t.me/+79202004817"
+              href="http://t.me/timdo"
               rel="noreferrer"
               target="_blank"
               aria-label="Front"
