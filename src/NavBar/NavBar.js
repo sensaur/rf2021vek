@@ -12,8 +12,8 @@ function NavBar() {
       <div className="container">
         <div className="navbar-nav-wrap">
           <div className="navbar-brand-wrapper">
-            <div className="text-center" style={{ color: "#377DFF", fontWeight: "bold", fontSize: "1.15rem" }}>Россия</div>
-            <div className="text-center" style={{ color: "#377DFF", fontWeight: "bold", fontSize: "1.15rem" }}>XXI век</div>
+            <div className="text-center" style={{ color: "#377DFF", fontWeight: "bold", fontSize: "1.166rem" }}>Россия</div>
+            <div className="text-center" style={{ color: "#377DFF", fontWeight: "bold", fontSize: "1.166rem" }}>XXI век</div>
           </div>
           <div className="navbar-brand-wrapper">
             <Link
