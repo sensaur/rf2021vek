@@ -1,7 +1,7 @@
 import { HashLink as Link } from 'react-router-hash-link';
 import telegram from '../img/telegram.svg'
-// import whatsapp from '../img/whatsapp.svg'
 import vk from '../img/vk.svg'
+import navBarStyles from './navBar.module.css'
 
 function NavBar() {
   return (
@@ -11,9 +11,9 @@ function NavBar() {
     >
       <div className="container">
         <div className="navbar-nav-wrap">
-          <div className="navbar-brand-wrapper">
-            <div className="text-center" style={{ color: "#377DFF", fontWeight: "bold", fontSize: "1.166rem" }}>Россия</div>
-            <div className="text-center" style={{ color: "#377DFF", fontWeight: "bold", fontSize: "1.166rem" }}>XXI век</div>
+          <div className={`${navBarStyles.logoWrapper} navbar-brand-wrapper`}>
+            <div className={`${navBarStyles.logoRussia} text-center`}>Россия</div>
+            <div className={`${navBarStyles.logoRussia} text-center`}>XXI век</div>
           </div>
           <div className="navbar-brand-wrapper">
             <Link
