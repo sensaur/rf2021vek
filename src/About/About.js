@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {
   Pagination, Autoplay, Navigation,
 } from "swiper";
+import { useEffect } from 'react'
 import svi04 from '../img/svi04.jpg'
 import kul04 from '../img/kul04.jpg'
 import orl03 from '../img/orl03.jpg'
@@ -29,6 +30,9 @@ function About() {
   // useEffect(() => {
   //   window.scrollTo(0, 0);
   // }, [])
+  useEffect(() => {
+    document.title = 'Россия 21 век';
+  }, []);
   return (
     <main id="content" role="main">
       <div

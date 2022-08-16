@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 import Loader from "../Loader/Loader";
 
 function Join() {
+  useEffect(() => {
+    document.title = 'Россия 21 век - стать волонтером';
+  }, []);
   const navigate = useNavigate()
   const initialState = {
     firstName: '',

@@ -9,6 +9,9 @@ function News() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
+  useEffect(() => {
+    document.title = 'Россия 21 век - новости';
+  }, []);
 
   const [state, setState] = useState([])
   const [loader, setLoader] = useState(false)

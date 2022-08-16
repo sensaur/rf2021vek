@@ -4,6 +4,11 @@ function Contacts() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
+
+  useEffect(() => {
+    document.title = 'Контакты ОСОО «Россия XXI век';
+  }, []);
+
   return (
     <div className="container content-space-2 content-space-lg-2">
       <div className="row">
