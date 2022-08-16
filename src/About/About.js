@@ -31,7 +31,7 @@ function About() {
   //   window.scrollTo(0, 0);
   // }, [])
   useEffect(() => {
-    document.title = 'Россия 21 век';
+    document.title = 'Россия XXI век';
   }, []);
   return (
     <main id="content" role="main">
