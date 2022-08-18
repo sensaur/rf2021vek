@@ -8,7 +8,8 @@ import {
 import { useEffect } from 'react'
 import svi04 from '../img/svi04.jpg'
 import kul04 from '../img/kul04.jpg'
-import orl03 from '../img/orl03.jpg'
+// import orl03 from '../img/orl03.jpg'
+import orl04 from '../img/orl04.jpg'
 import img01 from '../img/img01.jpg'
 import img02 from '../img/img02.jpg'
 import img03 from '../img/img03.jpg'
@@ -657,7 +658,7 @@ function About() {
                 <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
-                    src={orl03}
+                    src={orl04}
                     alt="888"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
