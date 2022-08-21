@@ -8,8 +8,6 @@ import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper";
 import circledStripe from "../img/circled-stripe.svg";
 import dots from "../img/dots.svg";
-// import img10 from '../img/img10.jpg'
-// import mailchimp from '../img/mailchimp-primary.svg'
 
 function Feedback() {
   return (
@@ -133,7 +131,7 @@ function Feedback() {
           <img
             className="img-fluid"
             src={circledStripe}
-            alt="Description"
+            alt="stripes"
           />
         </figure>
 
@@ -146,7 +144,7 @@ function Feedback() {
           <img
             className="img-fluid"
             src={dots}
-            alt="Description"
+            alt="dots"
           />
         </figure>
       </div>

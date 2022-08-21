@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
-// import { useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 // eslint-disable-next-line no-unused-vars
 import {
   Pagination, Autoplay, Navigation,
 } from "swiper";
 import { useEffect } from 'react'
-import svi04 from '../img/svi04.jpg'
-import kul04 from '../img/kul04.jpg'
-// import orl03 from '../img/orl03.jpg'
-import orl04 from '../img/orl04.jpg'
+import svi from '../img/svi.jpg'
+import kul from '../img/kul.jpg'
+import orl from '../img/orl.jpg'
 import img01 from '../img/img01.jpg'
 import img02 from '../img/img02.jpg'
 import img03 from '../img/img03.jpg'
@@ -27,10 +25,7 @@ import 'swiper/css/navigation';
 // eslint-disable-next-line import/no-unresolved
 import "swiper/css/pagination";
 
-function About() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [])
+function Main() {
   useEffect(() => {
     document.title = 'Россия XXI век';
   }, []);
@@ -43,7 +38,6 @@ function About() {
         <div className="w-lg-75 text-center mx-lg-auto">
           <div className="mb-5 mb-md-10">
             <h1 style={{ fontSize: "calc(1.475rem + 2.7vw)", margin: "0" }}>Россия XXI век</h1>
-            {/* <p className="lead content-space-t-lg-1"> */}
             <p className="lead" style={{ paddingTop: "48px" }}>
               Благотворительная некоммерческая организация. Мы занимаемся благотворительной помощью,
               привлечением волонтеров на помощь детям с инвалидностью и их родителям.
@@ -172,7 +166,7 @@ function About() {
             <img
               className="img-fluid"
               src={circledStripe}
-              alt="Description"
+              alt="stripes"
             />
           </figure>
 
@@ -185,7 +179,7 @@ function About() {
             <img
               className="img-fluid"
               src={dots}
-              alt="Description"
+              alt="dots"
             />
           </figure>
         </div>
@@ -212,7 +206,6 @@ function About() {
           className="container position-relative content-space-t-3 content-space-t-lg-4 content-space-b-2"
         >
           <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            {/* <h1 className="display-4 mb-3">Путь развития</h1> */}
             <h1 className="">Путь развития</h1>
             <p className="lead">
               За время работы в различных субъектах РФ мы достигли больших
@@ -630,8 +623,8 @@ function About() {
                 <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
-                    src={svi04}
-                    alt="888"
+                    src={svi}
+                    alt="CEOPortrait"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
@@ -644,8 +637,8 @@ function About() {
                 <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
-                    src={kul04}
-                    alt="888"
+                    src={kul}
+                    alt="MedicalViceCEOPortrait"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
@@ -658,8 +651,8 @@ function About() {
                 <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
                   <img
                     className="card-img rounded-2"
-                    src={orl04}
-                    alt="888"
+                    src={orl}
+                    alt="SocialViceCEOPortrait"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
@@ -681,4 +674,4 @@ function About() {
   );
 }
 
-export default About;
+export default Main;

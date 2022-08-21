@@ -21,7 +21,6 @@ function Blockquote({ children }) {
 
 const options = {
   renderMark: {
-    // bold: (text) => <Blockquote>{text}</Blockquote>,
   },
   renderNode: {
     blockquote: (node, children) => <Blockquote>{children}</Blockquote>,
@@ -31,11 +30,6 @@ const options = {
 
 function NewsDetail() {
   const { id } = useParams()
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [])
-
   const [oneNews, setOneNews] = useState({})
   const [loader, setLoader] = useState(false)
   const formatData = (items) => items.map((item) => {
@@ -102,7 +96,6 @@ function NewsDetail() {
 
   const ONEDAY = 24 * 60 * 60 * 1000;
   const today = new Date()
-  console.log("oneNews", oneNews)
   const dateOfArticle = new Date(oneNews.datePublication)
   const days = Math.round(Math.abs(((today - dateOfArticle) / ONEDAY)))
 
@@ -121,7 +114,6 @@ function NewsDetail() {
         <div className="row align-items-sm-center mb-5">
           <div className="col-sm-7 mb-4 mb-sm-0">
             <div className="d-flex align-items-center">
-              {/* {oneNews.avatarUrl ? console.log("have") : console.log("absent")} */}
               {oneNews.avatarUrl
 
                 ? (

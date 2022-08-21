@@ -9,4 +9,3 @@ const numWord = (value, words) => {
 
 // eslint-disable-next-line import/prefer-default-export
 export { numWord }
-// test
