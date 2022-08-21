@@ -18,7 +18,7 @@ function Partners() {
             <img
               className="card-img-top"
               src={imgRainbow}
-              alt="7777"
+              alt="rainbow"
             />
 
             <div className="card-body">
@@ -37,7 +37,7 @@ function Partners() {
             <img
               className="card-img-top"
               src={imgLibraries}
-              alt="7777"
+              alt="library"
             />
 
             <div className="card-body">
@@ -57,7 +57,7 @@ function Partners() {
             <img
               className="card-img-top"
               src={imgPiligrim}
-              alt="7777"
+              alt="piligrim"
             />
             <div className="card-body">
               <p className="card-text">
@@ -73,7 +73,7 @@ function Partners() {
             <img
               className="card-img-top"
               src={imgHeart}
-              alt="7777"
+              alt="heart"
             />
 
             <div className="card-body">
