@@ -1,7 +1,7 @@
-import imgLibraries from '../img/imgLibraries.jpg'
-import imgPiligrim from '../img/imgPiligrim.jpg'
-import imgHeart from '../img/imgHeart.jpg'
-import imgRainbow from '../img/imgRainbow.jpg'
+import imgLibraries from '../img/imgLibraries.webp'
+import imgPiligrim from '../img/imgPiligrim.webp'
+import imgHeart from '../img/imgHeart.webp'
+import imgRainbow from '../img/imgRainbow.webp'
 
 function Partners() {
   return (
