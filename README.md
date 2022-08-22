@@ -7,3 +7,4 @@ Contentful headless CMS for data management, and Netlify to host the application
 [//]: # (<img width="1438" alt="performanceScore" src="https://imgur.com/fQlOhOI"/>)
 
 ![](https://imgur.com/wciv77g)
+<blockquote class="imgur-embed-pub" lang="en" data-id="wciv77g"><a href="https://imgur.com/wciv77g">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
