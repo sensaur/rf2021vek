@@ -6,7 +6,7 @@ Contentful headless CMS for data management, and Netlify to host the application
 <img width="1438" alt="demoSite" src="https://imgur.com/wciv77g"/>
 <img width="1438" alt="performanceScore" src="https://imgur.com/fQlOhOI"/>
 
-<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b56eb66670a10346c3686247d86aa95a36c03d2e69962a9884f8fffc58d9956f/68747470733a2f2f692e696d6775722e636f6d2f645432565139572e676966" data-target="animated-image.originalLink"><img src="https://camo.githubusercontent.com/b56eb66670a10346c3686247d86aa95a36c03d2e69962a9884f8fffc58d9956f/68747470733a2f2f692e696d6775722e636f6d2f645432565139572e676966" alt="Pair Game Example" data-canonical-src="https://i.imgur.com/dT2VQ9W.gif" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b56eb66670a10346c3686247d86aa95a36c03d2e69962a9884f8fffc58d9956f/68747470733a2f2f692e696d6775722e636f6d2f645432565139572e676966" data-target="animated-image.originalLink"><img src="https://camo.githubusercontent.com/b56eb66670a10346c3686247d86aa95a36c03d2e69962a9884f8fffc58d9956f/68747470733a2f2f692e696d6775722e636f6d2f645432565139572e676966" alt="Pair Game Example" data-canonical-src="https://imgur.com/wciv77g" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
       <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
         <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://camo.githubusercontent.com/b56eb66670a10346c3686247d86aa95a36c03d2e69962a9884f8fffc58d9956f/68747470733a2f2f692e696d6775722e636f6d2f645432565139572e676966" target="_blank">
           <span data-target="animated-image.imageContainer">
@@ -24,11 +24,6 @@ Contentful headless CMS for data management, and Netlify to host the application
               <rect x="9" y="2" width="3" height="12" rx="1"></rect>
             </svg>
           </button>
-          <a data-target="animated-image.openButton" aria-label="Open Pair Game Example in new window" class="AnimatedImagePlayer-button" href="https://camo.githubusercontent.com/b56eb66670a10346c3686247d86aa95a36c03d2e69962a9884f8fffc58d9956f/68747470733a2f2f692e696d6775722e636f6d2f645432565139572e676966" target="_blank">
-            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
-            </svg>
-          </a>
         </span>
       </span></animated-image>
 </p>
