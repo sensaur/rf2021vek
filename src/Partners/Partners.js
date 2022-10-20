@@ -2,6 +2,7 @@ import imgLibraries from '../img/imgLibraries.webp'
 import imgPiligrim from '../img/imgPiligrim.webp'
 import imgHeart from '../img/imgHeart.webp'
 import imgRainbow from '../img/imgRainbow.webp'
+import imgEcotvorets from '../img/imgEcotvorets.webp'
 
 function Partners() {
   return (
@@ -12,7 +13,7 @@ function Partners() {
         </h1>
       </div>
 
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 mb-5">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-5 mb-5">
         <div className="col mb-5">
           <div className="card h-100">
             <img
@@ -25,7 +26,7 @@ function Partners() {
               <p className="card-text">
                 <b>Досуговый центр Радуга</b>
               </p>
-              <p>
+              <p className="small">
                 Благотворительная общественная организация помощи инвалидам детства
               </p>
             </div>
@@ -44,7 +45,7 @@ function Partners() {
               <p className="card-text">
                 <b>Библиотеки Южнопортового района 121-124 ОКЦ ЮВАО</b>
               </p>
-              <p>
+              <p className="small">
                 Сотрудники библиотеки проводят мероприятия и организовывают специальную программу
                 для центров помощи детям с инвалидностью
               </p>
@@ -63,7 +64,7 @@ function Partners() {
               <p className="card-text">
                 <b>Центр Пилигрим</b>
               </p>
-              <p>Межрегиональная общественная организация инвалидов </p>
+              <p className="small">Межрегиональная общественная организация инвалидов </p>
             </div>
           </div>
         </div>
@@ -80,9 +81,29 @@ function Partners() {
               <p className="card-text">
                 <b>Чаша Сердца</b>
               </p>
-              <p>
+              <p className="small">
                 Региональная благотворительная общественная организация содействия в социальной
                 защите инвалидам детства
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col mb-5">
+          <div className="card h-100">
+            <img
+              className="card-img-top"
+              src={imgEcotvorets}
+              alt="ecotvorets"
+            />
+
+            <div className="card-body">
+              <p className="card-text">
+                <b>Фестиваль «Экотворец»</b>
+              </p>
+              <p className="small">
+                Фестиваль формирует экологическую культуру подрастающего поколения, имеет
+                художественную и социальную направленность.
               </p>
             </div>
           </div>
