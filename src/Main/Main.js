@@ -29,6 +29,7 @@ function Main() {
   useEffect(() => {
     document.title = 'Россия XXI век';
   }, []);
+  console.log("test 28 dec 2023")
   return (
     <main id="content" role="main">
       <div
