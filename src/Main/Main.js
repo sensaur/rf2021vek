@@ -38,6 +38,7 @@ function Main() {
       >
         <div className="w-lg-75 text-center mx-lg-auto">
           <div className="mb-5 mb-md-10">
+            <h1 style={{ fontSize: "calc(1.475rem + 2.7vw)", margin: "0" }}>Общероссийская общественная организация</h1>
             <h1 style={{ fontSize: "calc(1.475rem + 2.7vw)", margin: "0" }}>Россия XXI век</h1>
             <p className="lead" style={{ paddingTop: "48px" }}>
               Благотворительная некоммерческая организация. Мы занимаемся благотворительной помощью,

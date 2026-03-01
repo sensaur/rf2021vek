@@ -1,5 +1,4 @@
 import { HashLink as Link } from 'react-router-hash-link';
-import telegram from '../img/telegram.svg'
 import vk from '../img/vk.svg'
 import navBarStyles from './navBar.module.css'
 
@@ -55,16 +54,6 @@ function NavBar() {
                 />
               </svg>
             </Link>
-            <a
-              className="navbar-brand"
-              href="http://t.me/timdo"
-              rel="noreferrer"
-              target="_blank"
-              aria-label="Front"
-            >
-              <img className="" src={telegram} alt="Logo" height="30px" />
-            </a>
-
             {/* <Link className="navbar-brand" to="/" aria-label="Front"> */}
             {/*  <img className="" src={whatsapp} alt="Logo" height="30px" /> */}
             {/* </Link> */}
