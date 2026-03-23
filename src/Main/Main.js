@@ -6,7 +6,6 @@ import {
 } from "swiper";
 import { useEffect } from 'react'
 import svi from '../img/svi.webp'
-import kul from '../img/kul.webp'
 import orl from '../img/orl.webp'
 import img01 from '../img/img01.webp'
 import img02 from '../img/img02.webp'
@@ -621,8 +620,8 @@ function Main() {
                 <h1>Руководство</h1>
               </div>
 
-              <div className="row">
-                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
+              <div className="row justify-content-center g-4">
+                <div className="col-sm-10 col-md-6 col-lg-5">
                   <img
                     className="card-img rounded-2"
                     src={svi}
@@ -636,21 +635,7 @@ function Main() {
                   </div>
                 </div>
 
-                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
-                  <img
-                    className="card-img rounded-2"
-                    src={kul}
-                    alt="MedicalViceCEOPortrait"
-                  />
-                  <div className="card card-sm text-center mt-n7 mx-3">
-                    <div className="card-body">
-                      <h4 className="card-title">Кулайкин Сергей Владимирович</h4>
-                      <p className="card-text">Заместитель председателя по общим вопросам</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-sm-6 col-md-4 mb-5 mb-lg-0">
+                <div className="col-sm-10 col-md-6 col-lg-5">
                   <img
                     className="card-img rounded-2"
                     src={orl}
