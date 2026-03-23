@@ -625,7 +625,7 @@ function Main() {
                   <img
                     className="card-img rounded-2"
                     src={svi}
-                    alt="CEOPortrait"
+                    alt="Helping people with dasabilities"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
@@ -639,7 +639,7 @@ function Main() {
                   <img
                     className="card-img rounded-2"
                     src={orl}
-                    alt="SocialViceCEOPortrait"
+                    alt="Helping people with dasabilities"
                   />
                   <div className="card card-sm text-center mt-n7 mx-3">
                     <div className="card-body">
