@@ -124,8 +124,7 @@ function NavBar() {
               </li>
               <li className="nav-item">
                 <Link className="btn btn-primary btn-transition rounded-pill" to="join">
-                  Стать
-                  волонтером
+                  Связаться с нами
                 </Link>
               </li>
             </ul>

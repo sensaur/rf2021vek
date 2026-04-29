@@ -604,7 +604,7 @@ function Main() {
 
             <div className="d-grid gap-2 col-lg-5 mx-auto py-6">
               <Link className="btn btn-primary btn-transition" to="/join">
-                Стать волонтером
+                Связаться с нами
               </Link>
             </div>
 

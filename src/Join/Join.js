@@ -6,7 +6,7 @@ import Loader from "../Loader/Loader";
 
 function Join() {
   useEffect(() => {
-    document.title = 'Россия 21 век - стать волонтером';
+    document.title = 'Россия 21 век — связаться с нами';
   }, []);
   const navigate = useNavigate()
   const initialState = {
