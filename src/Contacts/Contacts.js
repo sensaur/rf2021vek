@@ -26,11 +26,6 @@ function Contacts() {
           />
 
           <div className="row py-2">
-            <div className="col-12 mb-4 mb-lg-5">
-              <h5 className="mb-1">Email:</h5>
-              <a className="link-dark" href="mailto:info@rf21vek.ru">info@rf21vek.ru</a>
-            </div>
-
             <div className="col-sm-6">
               <h5 className="mb-1 py-1">Адрес:</h5>
               <p className="link-dark py-2">

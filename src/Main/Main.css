@@ -1,0 +1,25 @@
+/* Карточки «Путь развития»: одинаковая высота в видимой строке слайдера */
+.development-path-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.development-path-swiper .swiper-slide {
+  box-sizing: border-box;
+  display: flex;
+  height: auto;
+}
+
+.development-path-swiper .swiper-slide .card {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.development-path-swiper .swiper-slide .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

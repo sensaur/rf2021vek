@@ -24,6 +24,8 @@ import 'swiper/css/navigation';
 // eslint-disable-next-line import/no-unresolved
 import "swiper/css/pagination";
 
+import "./Main.css";
+
 function Main() {
   useEffect(() => {
     document.title = 'Россия XXI век';
@@ -231,7 +233,7 @@ function Main() {
                 clickable: false,
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper"
+              className="mySwiper development-path-swiper"
             >
               <SwiperSlide>
                 {' '}
@@ -301,6 +303,20 @@ function Main() {
                     <h4 className="card-title" style={{ color: "white" }}>2022</h4>
                     <p className="card-text small" style={{ color: "white" }}>
                       Проведение регулярных мероприятий и помощь в социализации детей-инвалидов
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
+                <div
+                  className="card card-sm card-transition shadow-sm"
+                  style={{ backgroundColor: "rgba(5,200,168)" }}
+                >
+                  <div className="card-body text-center">
+                    <h4 className="card-title" style={{ color: "white" }}>2026</h4>
+                    <p className="card-text small" style={{ color: "white" }}>
+                      Старт реализации программы Алексея Свистова «ИНКЛЮЗИВНОЕ ОБЩЕСТВО 2030».
                     </p>
                   </div>
                 </div>
@@ -323,7 +339,7 @@ function Main() {
                 clickable: false,
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper"
+              className="mySwiper development-path-swiper"
             >
               <SwiperSlide>
                 {' '}
@@ -393,6 +409,20 @@ function Main() {
                     <h4 className="card-title" style={{ color: "white" }}>2022</h4>
                     <p className="card-text small" style={{ color: "white" }}>
                       Проведение регулярных мероприятий и помощь в социализации детей-инвалидов
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {' '}
+                <div
+                  className="card card-sm card-transition shadow-sm"
+                  style={{ backgroundColor: "rgba(5,200,168)" }}
+                >
+                  <div className="card-body text-center">
+                    <h4 className="card-title" style={{ color: "white" }}>2026</h4>
+                    <p className="card-text small" style={{ color: "white" }}>
+                      Старт реализации программы Алексея Свистова «ИНКЛЮЗИВНОЕ ОБЩЕСТВО 2030».
                     </p>
                   </div>
                 </div>

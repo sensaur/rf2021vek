@@ -70,14 +70,6 @@ function Footer() {
 
           <div className="col-lg-3 mb-7 mb-lg-0">
             <ul className="list-unstyled list-py-1">
-              <li>
-                <a className="link-sm link-light" href="mailto:info@rf21vek.ru">
-                  <i
-                    className="bi-envelope me-1"
-                  />
-                  info@rf21vek.ru
-                </a>
-              </li>
               <li className="link-sm link-light">
                 <i
                   className="bi-clock me-1"
