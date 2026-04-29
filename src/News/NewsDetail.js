@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Client from "../Contentful";
@@ -28,11 +28,8 @@ const options = {
 
 };
 
-function NewsDetail() {
-  const { id } = useParams()
-  const [oneNews, setOneNews] = useState({})
-  const [loader, setLoader] = useState(false)
-  const formatData = (items) => items.map((item) => {
+function formatArticleItems(items) {
+  return items.map((item) => {
     const idFromServer = item.sys.id;
     const image1Url = item.fields.image1?.fields.file.url
     const image2Url = item.fields.image2?.fields.file.url
@@ -68,35 +65,67 @@ function NewsDetail() {
       image7Url,
     }
   })
-  const getData = async () => {
-    try {
-      const response = await Client.getEntries({
-        content_type: "articles",
-        order: "sys.createdAt",
-      })
-      const news = formatData(response.items);
-      (setLoader(false))
-      setOneNews(news.filter((el) => el.id === id)[0])
-    } catch (error) {
-      console.log(error)
-    }
-  }
+}
 
+function NewsDetail() {
+  const { id } = useParams()
+  const [oneNews, setOneNews] = useState(null)
+  const [loader, setLoader] = useState(false)
   useEffect(() => {
-    setLoader(true);
-    (async function resolve() {
-      await getData();
-    }());
-    setTimeout(() => setLoader(false), 1e3)
-  }, []);
+    let cancelled = false
+    setLoader(true)
+
+    async function load() {
+      try {
+        const response = await Client.getEntries({
+          content_type: "articles",
+          order: "sys.createdAt",
+        })
+        const news = formatArticleItems(response.items)
+        const found = news.filter((el) => el.id === id)[0]
+        if (!cancelled) {
+          setOneNews(found ?? null)
+        }
+      } catch (error) {
+        console.log(error)
+        if (!cancelled) {
+          setOneNews(null)
+        }
+      } finally {
+        if (!cancelled) {
+          setLoader(false)
+        }
+      }
+    }
+
+    load()
+    return () => {
+      cancelled = true
+    }
+  }, [id])
 
   if (loader) {
     return <Loader />
   }
 
+  if (!oneNews) {
+    return (
+      <div className="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
+        <div className="w-lg-65 mx-lg-auto text-center">
+          <p className="lead mb-4">Новость не найдена или недоступна.</p>
+          <Link className="btn btn-primary" to="/news">
+            К списку новостей
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
   const ONEDAY = 24 * 60 * 60 * 1000;
   const today = new Date()
-  const dateOfArticle = new Date(oneNews.datePublication)
+  const dateOfArticle = oneNews.datePublication
+    ? new Date(oneNews.datePublication)
+    : today
   const days = Math.round(Math.abs(((today - dateOfArticle) / ONEDAY)))
 
   return (
