@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Client from "../Contentful";
 import Loader from "../Loader/Loader";
+import inclusive2030Article from "../constants/inclusive2030Article";
 
 function Projects() {
   useEffect(() => {
@@ -63,14 +64,45 @@ function Projects() {
         </h1>
       </div>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+        <div className="col mb-5" key="inclusive-2030-static">
+          <div className="card h-100">
+            <a href={inclusive2030Article.href} className="d-block overflow-hidden rounded-top">
+              <div className="ratio ratio-16x9">
+                <img
+                  src={inclusive2030Article.img}
+                  alt="Инклюзивное общество 2030 — превью"
+                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                />
+              </div>
+            </a>
+            <div className="card-body">
+              <p className="card-text">
+                <h3>{inclusive2030Article.heading}</h3>
+                {inclusive2030Article.description}
+              </p>
+            </div>
+            <div className="card-footer pt-0">
+              <a className="card-link" href={inclusive2030Article.href}>
+                Подробнее
+                <i
+                  className="bi-chevron-right small ms-1"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
         {state?.map((el) => (
-          <div className="col mb-5">
+          <div className="col mb-5" key={el.id}>
             <div className="card h-100">
-              <img
-                className="card-img-top"
-                src={el?.image}
-                alt="helpingMan"
-              />
+              <div className="overflow-hidden rounded-top">
+                <div className="ratio ratio-16x9">
+                  <img
+                    src={el?.image}
+                    alt={el?.shortTitle || 'Проект'}
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+              </div>
 
               <div className="card-body">
                 <p className="card-text">

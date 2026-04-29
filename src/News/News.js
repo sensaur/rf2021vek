@@ -3,20 +3,8 @@ import { useEffect, useState } from "react"
 import moment from 'moment';
 import Client from "../Contentful";
 import Loader from "../Loader/Loader";
+import inclusive2030Article from "../constants/inclusive2030Article";
 import 'moment/locale/ru';
-
-/**
- * Статическая статья из public/news/…/index.html (не в Contentful).
- * Ссылка — полный переход, иначе перехватит маршрут /news/:id.
- */
-const INKLUZ_STATIK = {
-  href: `${process.env.PUBLIC_URL}/news/inklyuzivnoe-obshhestvo-2030/`,
-  img: `${process.env.PUBLIC_URL}/img/inklyuzivnoe-obshhestvo-2030-og.jpg`,
-  heading: 'Инклюзивное общество 2030 — программа интеграции людей с ОВЗ',
-  description:
-    'Программа «Инклюзивное общество 2030» — 6 проектов по включению людей с ограниченными возможностями здоровья в социальную жизнь России.',
-  datePublication: '2026-04-29',
-}
 
 function News() {
   useEffect(() => {
@@ -70,10 +58,10 @@ function News() {
         <div className="row gx-0">
           <div className="col-lg-8">
             <div className="shape-container overflow-hidden">
-              <a href={INKLUZ_STATIK.href} className="d-block">
+              <a href={inclusive2030Article.href} className="d-block">
                 <img
                   className="card-img"
-                  src={INKLUZ_STATIK.img}
+                  src={inclusive2030Article.img}
                   alt="Инклюзивное общество 2030 — превью"
                 />
               </a>
@@ -108,20 +96,20 @@ function News() {
           <div className="col-lg-4">
             <div className="card-body">
               <h3 className="card-title">
-                <a className="text-dark small" href={INKLUZ_STATIK.href}>
-                  {INKLUZ_STATIK.heading}
+                <a className="text-dark small" href={inclusive2030Article.href}>
+                  {inclusive2030Article.heading}
                 </a>
               </h3>
 
               <p className="card-text small">
-                {INKLUZ_STATIK.description}
+                {inclusive2030Article.description}
               </p>
 
               <div className="card-footer">
                 <div className="flex-grow-1">
                   <div className="d-flex justify-content-end">
                     <p className="card-text">
-                      {moment(INKLUZ_STATIK.datePublication).format('D MMMM YYYY')}
+                      {moment(inclusive2030Article.datePublication).format('D MMMM YYYY')}
                     </p>
                   </div>
                 </div>
